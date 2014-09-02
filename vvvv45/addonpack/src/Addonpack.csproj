@@ -543,6 +543,10 @@
       <Project>{677CAE06-F007-4F8D-916C-E5129720C357}</Project>
       <Name>HTMLTexture</Name>
     </ProjectReference>
+    <ProjectReference Include="nodes\plugins\Texture\Spout\Spout.csproj">
+      <Project>{27f25509-8b78-45f0-be49-1046883b50ac}</Project>
+      <Name>Spout</Name>
+    </ProjectReference>
     <ProjectReference Include="nodes\plugins\Texture\TextEX9Texture\TextEX9Texture.csproj">
       <Project>{AD8E0A30-D592-4924-8017-914C3D15861B}</Project>
       <Name>TextEX9Texture</Name>
