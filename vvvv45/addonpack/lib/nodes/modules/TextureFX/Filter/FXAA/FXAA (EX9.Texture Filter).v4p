@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\FXAA\FXAA (EX9.Texture Filter).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\FXAA\FXAA (EX9.Texture Filter).v4p">
    <BOUNDS height="8685" left="15075" top="3780" type="Window" width="8445">
    </BOUNDS>
    <NODE componentmode="InABox" hiddenwhenlocked="0" id="29" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -275,6 +275,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
+   </PIN>
    </NODE>
    <LINK dstnodeid="11" dstpinname="Input 2" hiddenwhenlocked="1" srcnodeid="26" srcpinname="XY">
    </LINK>
@@ -315,7 +317,7 @@
    </BOUNDS>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
-   <PIN pinname="Input Enum" slicecount="1" values="| FXAAPreProcess|">
+   <PIN pinname="Input Enum" slicecount="1" values="FXAAPreProcess">
    </PIN>
    </NODE>
    <LINK dstnodeid="8" dstpinname="Technique" hiddenwhenlocked="1" srcnodeid="7" srcpinname="Output Enum">
@@ -363,7 +365,7 @@
    </BOUNDS>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
-   <PIN pinname="Input Enum" slicecount="1" values="| FXAA|">
+   <PIN pinname="Input Enum" slicecount="1" values="FXAA">
    </PIN>
    </NODE>
    <LINK dstnodeid="6" dstpinname="Technique" hiddenwhenlocked="1" srcnodeid="5" srcpinname="Output Enum">
@@ -429,7 +431,7 @@
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\effects\Constant.fx" id="31" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)">
    <BOUNDS height="100" left="735" top="4710" type="Node" width="100">
    </BOUNDS>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -456,4 +458,6 @@
    </LINK>
    <LINK srcnodeid="31" srcpinname="Layer" dstnodeid="4" dstpinname="Layer 1" hiddenwhenlocked="1">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

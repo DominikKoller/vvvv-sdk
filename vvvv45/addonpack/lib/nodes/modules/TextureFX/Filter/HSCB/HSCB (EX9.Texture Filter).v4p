@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.1.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p">
-   <BOUNDS height="11235" left="18075" top="0" type="Window" width="10305">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p">
+   <BOUNDS height="11235" left="14400" top="450" type="Window" width="10305">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="HSCB.fx" id="17" nodename="HSCB.fx" systemname="HSCB (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="5745" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| HSCB|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="HSCB">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -173,6 +173,8 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE componentmode="InABox" id="8" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="4815" top="4440" type="Node" width="0">
@@ -236,6 +238,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
    </NODE>
    <LINK dstnodeid="17" dstpinname="HueCycles" srcnodeid="5" srcpinname="Y Output Value">
@@ -343,9 +349,9 @@
    <LINK srcnodeid="12" srcpinname="Y" dstnodeid="2" dstpinname="Height">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8235" top="4425" width="0" height="0">
+   <BOUNDS type="Node" left="8220" top="4425" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8235" top="4425" width="795" height="240">
+   <BOUNDS type="Box" left="8220" top="4425" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -357,9 +363,13 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
+   </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="SaturationGamma">
    </LINK>
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="SaturationBalance">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

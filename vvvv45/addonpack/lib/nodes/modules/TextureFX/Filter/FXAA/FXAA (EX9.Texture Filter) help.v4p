@@ -1,0 +1,195 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\FXAA\FXAA (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="6090" top="1245" width="6795" height="7935">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="525" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="525" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|FXAA (EX9.Texture Filter)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="525" top="750" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="525" top="750" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|FXAA (anti-aliasing), coded by Matt Swoboda, ported to vvvv by dottore|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="855" top="5505" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="855" top="5505">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
+   <BOUNDS type="Node" left="855" top="6015" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="6015" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12780" top="6405" width="6240" height="5190">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Second">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="14">
+   <BOUNDS type="Node" left="855" top="2865" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="2865" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12795" top="1275" width="6240" height="5085">
+   </BOUNDS>
+   <PIN pinname="EX9 Out" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="First">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Backbuffer Height" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="DX9Texture (EX9.Texture)" nodename="DX9Texture (EX9.Texture)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="2310" top="3300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="EX9 Out" dstnodeid="13" dstpinname="Source">
+   </LINK>
+   <NODE systemname="FXAA (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\FXAA\FXAA (EX9.Texture Filter).v4p" nodename="FXAA (EX9.Texture Filter)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="855" top="4575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Point" slicecount="1" values="1">
+   </PIN>
+   <BOUNDS type="Box" left="855" top="4575">
+   </BOUNDS>
+   <PIN pinname="Brightness" visible="1" slicecount="1" values="1.5">
+   </PIN>
+   <PIN pinname="Radius" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="15075" top="3780" width="8445" height="8850">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="855" top="2370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="14" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="1035" top="1920" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Z" slicecount="1" values="0.23">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Actual Backbuffer Width" dstnodeid="14" dstpinname="Backbuffer Width" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4160" y="7480">
+   </LINKPOINT>
+   <LINKPOINT x="6100" y="1340">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Actual Backbuffer Height" dstnodeid="14" dstpinname="Backbuffer Height" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="3470" y="6895">
+   </LINKPOINT>
+   <LINKPOINT x="5845" y="1970">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="1830" top="4380" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1830" top="4380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="2340" top="4530" width="840" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2340" top="4530" width="840" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Enabled|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="855" top="6630" width="3405" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="855" top="6630" width="3405" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|This doesn&apos;t seem to work. Todo: ask Dottore!|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
