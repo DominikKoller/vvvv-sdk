@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.3.dtd" >
-   <PATCH nodename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Grain\Grain (EX9.Texture Filter).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Grain\Grain (EX9.Texture Filter).v4p">
    <BOUNDS height="9705" left="13200" top="3225" type="Window" width="13815">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Grain.fx" id="38" nodename="Grain.fx" systemname="Grain (EX9.Effect)">
@@ -9,7 +9,7 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="tex0" visible="1">
+   <PIN pinname="tex0" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Width" slicecount="1" visible="1" values="0.79">
    </PIN>
@@ -176,7 +176,7 @@
    </LINK>
    <LINK dstnodeid="32" dstpinname="Input 2" srcnodeid="31" srcpinname="Y Output Value">
    </LINK>
-   <INFO author="unc" description="Simple noise generator" tags="fx">
+   <INFO author="unc" description="Simple noise generator" tags="fx, noise">
    </INFO>
    <NODE componentmode="Hidden" id="30" nodename="DX9Texture (EX9.Texture)" systemname="DX9Texture (EX9.Texture)">
    <BOUNDS height="0" left="1365" top="7785" type="Node" width="0">
@@ -604,4 +604,6 @@
    </LINK>
    <LINK srcnodeid="22" srcpinname="Texture Out" dstnodeid="38" dstpinname="tex1">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

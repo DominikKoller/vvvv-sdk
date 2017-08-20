@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" systemname="Blur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4740" top="1065" width="6840" height="8310">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" systemname="Blur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4590" top="1065" width="6990" height="9000">
    </BOUNDS>
    <NODE systemname="Blur (EX9.Texture Filter)" filename="Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="555" top="3345" width="1035" height="270">
@@ -71,15 +71,15 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurRadial (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial\BlurRadial (EX9.Texture Filter).v4p" nodename="BlurRadial (EX9.Texture Filter)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="2190" top="5880" width="100" height="100">
+   <BOUNDS type="Node" left="2040" top="5880" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2190" top="5880">
+   <BOUNDS type="Box" left="2040" top="5880">
    </BOUNDS>
    </NODE>
    <NODE systemname="LensBlur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter).v4p" nodename="LensBlur (EX9.Texture Filter)" componentmode="Hidden" id="50">
-   <BOUNDS type="Node" left="3615" top="5880" width="100" height="100">
+   <BOUNDS type="Node" left="3315" top="5880" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="3615" top="5880">
+   <BOUNDS type="Box" left="3315" top="5880">
    </BOUNDS>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="55">
@@ -105,7 +105,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1725" top="2415" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.26">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -115,18 +115,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="89" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Width">
-   </LINK>
-   <NODE id="90" componentmode="Hidden" systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" stayontop="0" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="555" top="4215" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4905" top="2595" width="20730" height="9105">
-   </BOUNDS>
-   <BOUNDS type="Box" left="555" top="4215" width="4800" height="3600">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="55" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="90" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="103">
    <BOUNDS type="Node" left="3150" top="2415" width="1035" height="270">
@@ -145,9 +133,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="104">
-   <BOUNDS type="Node" left="540" top="6465" width="2685" height="270">
+   <BOUNDS type="Node" left="540" top="7665" width="2685" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="540" top="6465" width="3810" height="315">
+   <BOUNDS type="Box" left="540" top="7665" width="3810" height="315">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|How to use the Control Texture Pin:|">
    </PIN>
@@ -161,13 +149,13 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="105">
-   <BOUNDS type="Node" left="555" top="6780" width="315" height="270">
+   <BOUNDS type="Node" left="555" top="7980" width="315" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="555" top="6780" width="6015" height="285">
+   <BOUNDS type="Box" left="555" top="7980" width="6015" height="285">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|..\..\..\..\..\..\girlpower\Graphics\DX9\Texture\Control Texture Help (DX9).v4p|">
    </PIN>
-   <PIN pinname="Output String" visible="0">
+   <PIN pinname="Output String" visible="1">
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
@@ -183,5 +171,53 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="107" srcpinname="Output" dstnodeid="26" dstpinname="Input">
+   </LINK>
+   <NODE systemname="BlurFlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurFlow\BlurFlow (EX9.Texture Filter).v4p" nodename="BlurFlow (EX9.Texture Filter)" componentmode="Hidden" id="108">
+   <BOUNDS type="Node" left="4620" top="5880" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4620" top="5880">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="BlurGlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurGlow\BlurGlow (EX9.Texture Filter).v4p" nodename="BlurGlow (EX9.Texture Filter)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="555" top="6345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="555" top="6345">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="BlurWarp (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurWarp\BlurWarp (EX9.Texture Filter).v4p" nodename="BlurWarp (EX9.Texture Filter)" componentmode="Hidden" id="111">
+   <BOUNDS type="Node" left="2040" top="6345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2040" top="6345">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="BlurPerfector (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurPerfector\BlurPerfector (EX9.Texture Filter).v4p" nodename="BlurPerfector (EX9.Texture Filter)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="3315" top="6345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3315" top="6345">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="CameraMotionBlur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter).v4p" nodename="CameraMotionBlur (EX9.Texture Filter)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="4620" top="6345" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4620" top="6345">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="BlurRadial3D (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial3D\BlurRadial3D (EX9.Texture Filter).v4p" nodename="BlurRadial3D (EX9.Texture Filter)" componentmode="Hidden" id="114">
+   <BOUNDS type="Node" left="555" top="6825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="555" top="6825">
+   </BOUNDS>
+   </NODE>
+   <NODE id="90" componentmode="Hidden" systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" stayontop="0" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="555" top="4215" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4905" top="2595" width="20730" height="9105">
+   </BOUNDS>
+   <BOUNDS type="Box" left="555" top="4215" width="4800" height="3600">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Layer" dstnodeid="55" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="90" dstpinname="Texture">
    </LINK>
    </PATCH>

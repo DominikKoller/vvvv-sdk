@@ -2,8 +2,8 @@ float2 R;
 float2 R2;
 float2 Amount=(1,1);
 texture tex0,tex1;
-sampler s0=sampler_state{Texture=(tex0);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
-sampler s1=sampler_state{Texture=(tex1);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
+sampler s0=sampler_state{Texture=(tex0);MipFilter=None;MinFilter=None;MagFilter=None;};
+sampler s1=sampler_state{Texture=(tex1);MipFilter=None;MinFilter=None;MagFilter=None;};
 
 float4 p0(float2 x:TEXCOORD0,float2 x2:TEXCOORD1):color{
     float4 c=tex2D(s0,lerp(x,tex2D(s1,x2).xy,Amount));

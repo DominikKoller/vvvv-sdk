@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\WarpTime\WarpTime (EX9.Texture Filter).v4p">
-   <BOUNDS height="11190" left="12105" top="2235" type="Window" width="12750">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\WarpTime\WarpTime (EX9.Texture Filter).v4p" scrollx="0" scrolly="0">
+   <BOUNDS height="12315" left="6600" top="1575" type="Window" width="14025">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="WarpTime.fx" id="49" nodename="WarpTime.fx" systemname="WarpTime (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="17085">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| WarpTime|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="WarpTime">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -105,12 +105,12 @@
    </BOUNDS>
    <BOUNDS height="160" left="8325" top="7905" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Input">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="47" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="Hidden" id="47" nodename="RENDERER (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="0" left="2040" top="4830" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="1800" left="2040" top="4830" type="Box" width="2400">
@@ -130,6 +130,16 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    <PIN pinname="Background Color" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
    <LINK dstnodeid="47" dstpinname="Layers" linkstyle="PolyLine" srcnodeid="49" srcpinname="Layer">
@@ -225,7 +235,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -240,7 +250,7 @@
    </LINK>
    <LINK dstnodeid="41" dstpinname="Input 2" srcnodeid="40" srcpinname="Y Output Value">
    </LINK>
-   <INFO author="unc" description="Time warp from using second texture" tags="fx">
+   <INFO author="unc" description="Time warp from using second texture" tags="fx, slitscan">
    </INFO>
    <NODE componentmode="Hidden" id="39" nodename="DX9Texture (EX9.Texture)" systemname="DX9Texture (EX9.Texture)">
    <BOUNDS height="0" left="1365" top="6285" type="Node" width="0">
@@ -263,7 +273,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="6945" top="10350" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
    </PIN>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -559,7 +569,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="8325" top="7905" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Control" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Control">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -685,7 +695,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Insert" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Insert">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -703,7 +713,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Frame Count|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Frame Count|">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -787,7 +797,7 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Smooth" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Smooth">
    </PIN>
    </NODE>
    <LINK dstnodeid="49" dstpinname="Smooth" srcnodeid="5" srcpinname="Y Output Value">
@@ -870,4 +880,6 @@
    </LINK>
    <LINK srcnodeid="44" srcpinname="Y" dstnodeid="39" dstpinname="Height">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

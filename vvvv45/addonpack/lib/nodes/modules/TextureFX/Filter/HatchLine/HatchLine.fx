@@ -3,7 +3,7 @@ float4 ColorA:COLOR <String uiname="Hatch Color";>  = {0, 0, 0, 1};
 float4 ColorB:COLOR<String uiname="Background Color";>  = {1, 1, 1, 1};
 float threshold = 5.0;
 float thickness = 5.0;
-float rot = 0.0;
+float rot = 0.2;
 
 texture Tex <string uiname="Texture";>;
 sampler Samp = sampler_state  {Texture=(Tex);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DelayRGB\DelayRGB (EX9.Texture Filter).v4p">
-   <BOUNDS height="7995" left="14220" top="1530" type="Window" width="13740">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\DelayRGB\DelayRGB (EX9.Texture Filter).v4p" scrollx="30" scrolly="0">
+   <BOUNDS height="8010" left="8730" top="5595" type="Window" width="10065">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="DelayRGB.fx" id="16" nodename="DelayRGB.fx" systemname="DelayRGB (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| DelayRGB|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="DelayRGB">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -289,7 +289,7 @@
    </PIN>
    <PIN pinname="Insert" visible="1">
    </PIN>
-   <PIN pinname="Frame Count">
+   <PIN pinname="Frame Count" visible="1">
    </PIN>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
@@ -301,7 +301,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5655" top="540" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="16">
+   <PIN pinname="Y Input Value" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -309,13 +309,15 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Frame Count|">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Maximum">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="20">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Frame Count">
-   </LINK>
    <NODE systemname="I (Spreads)" nodename="I (Spreads)" componentmode="Hidden" id="24">
    <BOUNDS type="Node" left="5430" top="2835" width="100" height="100">
    </BOUNDS>
@@ -654,8 +656,40 @@
    <PIN pinname="Input" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Select">
-   </LINK>
    <LINK srcnodeid="49" srcpinname="Output" dstnodeid="23" dstpinname="XYZ">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="50">
+   <BOUNDS type="Node" left="5640" top="930" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
+   <BOUNDS type="Box" left="6135" top="855" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6135" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="50" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="49" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Output" dstnodeid="18" dstpinname="Frame Count">
    </LINK>
    </PATCH>

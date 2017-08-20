@@ -1,55 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha33.2.dtd" >
-   <PATCH nodename="C:\Work\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="4365" top="5055" width="6315" height="7080">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="4365" top="5055" width="7155" height="7080">
    </BOUNDS>
-   <NODE systemname="Muffy (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" nodename="Muffy (EX9.Texture Filter)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="1800" top="3435" width="2100" height="270">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="RingSize" visible="1">
-   </PIN>
-   <PIN pinname="RingAmount" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="1800" top="2205" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="13" srcpinname="Texture Out" dstnodeid="14" dstpinname="Input">
-   </LINK>
-   <NODE systemname="FullscreenQuad (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\FullscreenQuad (DX9).v4p" nodename="FullscreenQuad (DX9)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="1785" top="3960" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="11" dstpinname="Texture">
-   </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="10">
-   <BOUNDS type="Node" left="1785" top="4365" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1785" top="4365" width="2400" height="1800">
-   </BOUNDS>
-   <BOUNDS type="Window" left="11670" top="10020" width="6240" height="5010">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="10" dstpinname="Layers">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   <BOUNDS type="Node" left="615" top="165" width="5100" height="450">
    </BOUNDS>
-   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   <BOUNDS type="Box" left="615" top="165" width="5100" height="450">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="0" values="|Muffy (EX9.Texture Filter)|">
    </PIN>
@@ -59,95 +15,123 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   <BOUNDS type="Node" left="615" top="540" width="5100" height="600">
    </BOUNDS>
-   <BOUNDS type="Box" left="225" top="600" width="5100" height="600">
+   <BOUNDS type="Box" left="615" top="540" width="1185" height="375">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="0" values="|Muffy effect|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2475" top="2985" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2475" top="2985" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15.8">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="14" dstpinname="RingSize">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3375" top="2970" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3375" top="2970" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.76">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="14" dstpinname="RingAmount">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="2490" top="2670" width="780" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="2490" top="2670" width="780" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="RingSize">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3270" top="2670" width="780" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3270" top="2670" width="1005" height="270">
-   </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="RingAmount">
-   </PIN>
-   <PIN pinname="Output String" visible="0">
-   </PIN>
-   <PIN pinname="Show Grid" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="String Type" slicecount="1" values="MultiLine">
-   </PIN>
-   </NODE>
-   <PACK Name="addonpack" Version="33.3.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="SystemFolder (File)" nodename="SystemFolder (File)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="1800" top="1290" width="100" height="100">
+   <NODE systemname="Assets (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" nodename="Assets (EX9.Texture Source)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="615" top="1230" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   </NODE>
-   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="1800" top="1710" width="2070" height="270">
+   <BOUNDS type="Box" left="615" top="1230">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="-1" slicecount="1" pintype="Input" encoded="0" values="lib\assets\images\earth_512x512.jpg">
+   </NODE>
+   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="615" top="4905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Output" visible="1">
+   <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="earth_512x512.jpg">
-   </PIN>
-   <PIN pinname="Intersperse" visible="-1" pintype="Input" slicecount="1" values="None">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <BOUNDS type="Box" left="615" top="4905">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="20">
+   <BOUNDS type="Node" left="615" top="5415" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="5415" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
+   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="20" dstpinname="Layers">
    </LINK>
-   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="13" dstpinname="Filename">
+   <NODE systemname="Muffy (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" nodename="Muffy (EX9.Texture Filter)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="615" top="3825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="3825">
+   </BOUNDS>
+   <BOUNDS type="Window" left="5235" top="5385" width="7620" height="7155">
+   </BOUNDS>
+   <PIN pinname="RingSize" visible="1">
+   </PIN>
+   <PIN pinname="RingAmount" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Input">
    </LINK>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Control">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="1875" top="2370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1875" top="2370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Ring Size">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
+   <BOUNDS type="Box" left="1845" top="2865" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1845" top="2865" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="7.67">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Amount">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="2790" top="2370" width="930" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2790" top="2370" width="930" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Ring Size|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="2790" top="2865" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2790" top="2865" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Amount|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

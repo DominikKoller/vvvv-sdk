@@ -1,0 +1,207 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\Anaglyph\Anaglyph (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="6465" top="1365" width="6060" height="7185">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Anaglyph (EX9.Texture Filter)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="225" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="225" top="600" width="1875" height="375">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Anaglyph 3D Effect|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Assets (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" nodename="Assets (EX9.Texture Source)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="540" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="540" top="1500">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="540" top="5595" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="540" top="5595">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
+   <BOUNDS type="Node" left="540" top="6105" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="540" top="6105" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Anaglyph (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Anaglyph\Anaglyph (EX9.Texture Filter).v4p" nodename="Anaglyph (EX9.Texture Filter)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="540" top="4665" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="540" top="4665">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6600" top="1575" width="14025" height="12315">
+   </BOUNDS>
+   <PIN pinname="Hue" visible="1">
+   </PIN>
+   <PIN pinname="Saturation" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" visible="1">
+   </PIN>
+   <PIN pinname="Grayscale" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Character Size XY" visible="1">
+   </PIN>
+   <PIN pinname="Keep Color" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Character Count X" visible="1">
+   </PIN>
+   <PIN pinname="Characters Per Row" visible="1" slicecount="1" values="70">
+   </PIN>
+   <PIN pinname="Depth" visible="1">
+   </PIN>
+   <PIN pinname="Distance" slicecount="1" values="0.21" visible="1">
+   </PIN>
+   <PIN pinname="MapBlur" slicecount="1" values="0.01" visible="1">
+   </PIN>
+   <PIN pinname="Control" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="1665" top="2400" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.46">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Depth">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="1665" top="2805" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="2805" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.21">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Distance">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="1665" top="3225" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1665" top="3225" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.01">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="4" dstpinname="MapBlur">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18">
+   <BOUNDS type="Node" left="2475" top="2400" width="720" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="2400" width="720" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Depth|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="2475" top="2805" width="900" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="2805" width="900" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Distance|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="2475" top="3225" width="870" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="3225" width="870" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; MapBlur|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="1650" top="3795" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="3795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="4" dstpinname="Control">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="2475" top="3780" width="5115" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2475" top="3780" width="2955" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Control. This needs a depthmap of the image to create the 3D effect.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

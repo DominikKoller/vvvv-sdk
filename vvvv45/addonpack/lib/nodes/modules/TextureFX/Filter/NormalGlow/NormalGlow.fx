@@ -1,6 +1,6 @@
 float2 R;
 float Depth=1;
-float Radius <float uimin=0.0;float uimax=1.0;> =0.8;
+float Radius <float uimin=0.0;float uimax=1.0;> =0.3;
 float Shape;
 float4 BorderCol:COLOR ={0.0,0.0,0.0,1.0};
 texture tex0;

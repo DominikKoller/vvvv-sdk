@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Convolution\Convolution (EX9.Texture Filter).v4p">
-   <BOUNDS height="8550" left="15885" top="2955" type="Window" width="9000">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Convolution\Convolution (EX9.Texture Filter).v4p">
+   <BOUNDS height="12315" left="6600" top="1575" type="Window" width="14025">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Convolution.fx" id="14" nodename="Convolution.fx" systemname="Convolution (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| Convolution3x3|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="Convolution3x3">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -68,7 +68,7 @@
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="12" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="Hidden" id="12" nodename="RENDERER (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="0" left="2040" top="4830" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="1800" left="2040" top="4830" type="Box" width="2400">
@@ -88,6 +88,16 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
    <LINK dstnodeid="12" dstpinname="Layers" linkstyle="PolyLine" srcnodeid="14" srcpinname="Layer">
@@ -271,6 +281,12 @@
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Matrix">
    </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="9">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|-1, -4, -1, -4, 21, -4, -1, -4, -1|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="9" values="-1,-4,-1,-4,21,-4,-1,-4,-1">
+   </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="17" nodename="I (Spreads)" systemname="I (Spreads)">
    <BOUNDS height="0" left="7425" top="2475" type="Node" width="0">
@@ -356,4 +372,6 @@
    </LINK>
    <LINK dstnodeid="4" dstpinname="Height" srcnodeid="9" srcpinname="Y">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

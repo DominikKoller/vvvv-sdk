@@ -1,7 +1,7 @@
 float2 R;
-float Angle;
+float Angle = 0.9;
 float Offset <float uimin=0.0; float uimax=1.0;> = 0.05;
-float AlphaBlur <float uimin=0.0; float uimax=1.0;> = 0.1;
+float AlphaBlur <float uimin=0.0; float uimax=1.0;> = 0.3;
 float Alpha <float uimin=0.0; float uimax=1.0;> = 0.7;
 float Ext <float uimin=0.0;> = 0.0;
 float4 ShadowColor:COLOR;

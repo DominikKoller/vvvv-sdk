@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.3.dtd" >
-   <PATCH nodename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\misc\Resize (EX9.Texture).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\misc\Resize (EX9.Texture).v4p">
    <BOUNDS height="8505" left="9990" top="5145" type="Window" width="13560">
    </BOUNDS>
    <NODE componentmode="InABox" id="19" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -204,60 +204,6 @@
    </NODE>
    <LINK dstnodeid="11" dstpinname="Mip Map Count" linkstyle="PolyLine" srcnodeid="5" srcpinname="Output Enum">
    </LINK>
-   <NODE componentmode="InABox" id="4" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="7200" top="315" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="7200" top="315" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="16590" top="6225" type="Window" width="215">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Width">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="256">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="8192">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="3" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="8070" top="315" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="8070" top="315" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="17370" top="6045" type="Window" width="215">
-   </BOUNDS>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Height">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="256">
-   </PIN>
-   <PIN pinname="Maximum" slicecount="1" values="8192">
-   </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <NODE componentmode="Hidden" id="0" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
-   <BOUNDS height="0" left="4980" top="2025" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="X" visible="1">
-   </PIN>
-   <PIN pinname="Y" visible="1">
-   </PIN>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="0" dstpinname="X" srcnodeid="4" srcpinname="Y Output Value">
-   </LINK>
-   <LINK dstnodeid="0" dstpinname="Y" srcnodeid="3" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="11" dstpinname="Format" srcnodeid="17" srcpinname="Format">
    </LINK>
    <LINK dstnodeid="11" dstpinname="Width" srcnodeid="15" srcpinname="X">
@@ -276,22 +222,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="20" dstpinname="Input 2" srcnodeid="16" srcpinname="XY">
-   </LINK>
-   <NODE componentmode="Hidden" id="21" nodename="NOT (Boolean)" systemname="NOT (Boolean)">
-   <BOUNDS height="100" left="4995" top="2460" type="Node" width="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="21" dstpinname="Input" srcnodeid="0" srcpinname="XY">
-   </LINK>
-   <LINK dstnodeid="20" dstpinname="Switch" srcnodeid="21" srcpinname="Output">
-   </LINK>
-   <LINK dstnodeid="20" dstpinname="Input 1" srcnodeid="0" srcpinname="XY">
-   </LINK>
    <LINK dstnodeid="15" dstpinname="XY" srcnodeid="20" srcpinname="Output">
    </LINK>
    <NODE componentmode="Hidden" id="24" nodename="UniformScale (Transform)" systemname="UniformScale (Transform)">
@@ -331,5 +261,47 @@
    <LINK srcnodeid="23" srcpinname="Layer" dstnodeid="18" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Output Node" dstnodeid="23" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
+   <BOUNDS type="Node" left="6705" top="375" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6705" top="375" width="795" height="480">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="512,512">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|512. 512|">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="2" values="512,512">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SizeXY">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="6705" top="1110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="XY" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="20" dstpinname="Switch">
    </LINK>
    </PATCH>

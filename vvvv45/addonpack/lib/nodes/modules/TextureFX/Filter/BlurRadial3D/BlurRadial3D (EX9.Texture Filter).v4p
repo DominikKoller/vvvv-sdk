@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial3D\BlurRadial3D (EX9.Texture Filter).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial3D\BlurRadial3D (EX9.Texture Filter).v4p">
    <BOUNDS height="7995" left="13440" top="5025" type="Window" width="13740">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="BlurRadial3D.fx" id="16" nodename="BlurRadial3D.fx" systemname="BlurRadial3D (EX9.Effect)">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| RadialBlur3D|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="RadialBlur3D">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -289,9 +289,9 @@
    <LINK srcnodeid="18" srcpinname="Output Node" dstnodeid="16" dstpinname="tPoint">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="20" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="6780" top="570" width="0" height="0">
+   <BOUNDS type="Node" left="1995" top="435" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6780" top="570" width="795" height="240">
+   <BOUNDS type="Box" left="1995" top="435" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -301,9 +301,9 @@
    <LINK srcnodeid="20" srcpinname="Output Node" dstnodeid="14" dstpinname="View">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="21" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="7905" top="645" width="0" height="0">
+   <BOUNDS type="Node" left="3120" top="510" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7905" top="645" width="795" height="240">
+   <BOUNDS type="Box" left="3120" top="510" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -313,9 +313,9 @@
    <LINK srcnodeid="21" srcpinname="Output Node" dstnodeid="14" dstpinname="Projection">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="22" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="8970" top="735" width="0" height="0">
+   <BOUNDS type="Node" left="4185" top="600" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8970" top="735" width="795" height="240">
+   <BOUNDS type="Box" left="4185" top="600" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
@@ -339,9 +339,9 @@
    <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="14" dstpinname="Aspect Ratio">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="2370" top="675" width="0" height="0">
+   <BOUNDS type="Node" left="5520" top="225" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2370" top="675" width="795" height="720">
+   <BOUNDS type="Box" left="5520" top="225" width="795" height="720">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
    </PIN>
@@ -359,9 +359,9 @@
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Point XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4485" top="1170" width="0" height="0">
+   <BOUNDS type="Node" left="7635" top="720" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="4485" top="1170" width="795" height="240">
+   <BOUNDS type="Box" left="7635" top="720" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="16">
    </PIN>
@@ -375,13 +375,15 @@
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
+   <PIN pinname="Default" slicecount="1" values="16">
+   </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Iter">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5430" top="1155" width="0" height="0">
+   <BOUNDS type="Node" left="8580" top="705" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5430" top="1155" width="795" height="240">
+   <BOUNDS type="Box" left="8580" top="705" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -395,9 +397,9 @@
    <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Fade">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3420" top="1185" width="0" height="0">
+   <BOUNDS type="Node" left="6570" top="735" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3420" top="1185" width="795" height="240">
+   <BOUNDS type="Box" left="6570" top="735" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.1">
    </PIN>
@@ -407,7 +409,11 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Zoom">
    </PIN>
+   <PIN pinname="Default" slicecount="1" values="0.1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Zoom">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

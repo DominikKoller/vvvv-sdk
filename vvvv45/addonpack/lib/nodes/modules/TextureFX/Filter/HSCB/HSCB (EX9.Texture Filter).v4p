@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p">
    <BOUNDS height="11235" left="14400" top="450" type="Window" width="10305">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="HSCB.fx" id="17" nodename="HSCB.fx" systemname="HSCB (EX9.Effect)">
@@ -290,7 +290,7 @@
    </LINK>
    <LINK dstnodeid="3" dstpinname="Input 1" srcnodeid="17" srcpinname="Compiled">
    </LINK>
-   <INFO author="unc" description="Hue, Saturation, Brightness and Contrast (and Hue Cycles)" tags="fx">
+   <INFO author="unc" description="Hue, Saturation, Brightness and Contrast (and Hue Cycles)" tags="fx, color correction, greyscale">
    </INFO>
    <NODE componentmode="Hidden" id="2" nodename="DX9Texture (EX9.Texture)" systemname="DX9Texture (EX9.Texture)">
    <BOUNDS height="0" left="1515" top="7905" type="Node" width="0">

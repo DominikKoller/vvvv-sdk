@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha26.1.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Texturize\Texturize (EX9.Texture Filter).v4p">
-   <BOUNDS height="7995" left="14220" top="1530" type="Window" width="14580">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Texturize\Texturize (EX9.Texture Filter).v4p">
+   <BOUNDS height="12315" left="6600" top="1575" type="Window" width="14025">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Texturize.fx" id="16" nodename="Texturize.fx" systemname="Texturize (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| Texturize|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="Texturize">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -301,7 +301,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Cell Amount|">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Cell CountXY|">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -473,7 +473,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Offset XY|">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="OffsetXY">
    </PIN>
    </NODE>
    <LINK dstnodeid="16" dstpinname="Offset XY" srcnodeid="41" srcpinname="Y Output Value">
@@ -502,4 +502,6 @@
    </NODE>
    <LINK dstnodeid="16" dstpinname="Aspect" srcnodeid="42" srcpinname="Y Output Value">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

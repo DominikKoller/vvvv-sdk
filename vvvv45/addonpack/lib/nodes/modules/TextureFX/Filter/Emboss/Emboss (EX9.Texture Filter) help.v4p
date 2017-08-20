@@ -1,0 +1,325 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Emboss\Emboss (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="3000" top="1275" width="6525" height="10140">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="600" top="225" width="5100" height="450">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="225" width="5100" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Emboss (EX9.Texture Filter)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="600" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="600" width="5100" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Bump map / Emboss|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="675" top="5655" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="5655">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="11">
+   <BOUNDS type="Node" left="675" top="6165" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="6165" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9405" top="1275" width="6720" height="5970">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="11" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Emboss (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Emboss\Emboss (EX9.Texture Filter).v4p" nodename="Emboss (EX9.Texture Filter)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="675" top="4875" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="4875">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3210" top="7290" width="11985" height="7155">
+   </BOUNDS>
+   <PIN pinname="Frequency" visible="1" slicecount="1" pintype="Input" values="1">
+   </PIN>
+   <PIN pinname="AmountXY" slicecount="2" visible="1" values="15.8,15.8">
+   </PIN>
+   <PIN pinname="CenterXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   <PIN pinname="Amount" slicecount="1" visible="1" values="3.12">
+   </PIN>
+   <PIN pinname="Radius" visible="1" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Rotate" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Bump Amount" visible="1">
+   </PIN>
+   <PIN pinname="Map Smooth" visible="1">
+   </PIN>
+   <PIN pinname="Bump Gamma" visible="1">
+   </PIN>
+   <PIN pinname="Light Direction XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Colored" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14">
+   <BOUNDS type="Box" left="1740" top="1950" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="1950" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Bump Amount">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="1740" top="2370" width="825" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="2370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Bump Map Smooth">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="1740" top="2850" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="2850" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Bump Gamma">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="1740" top="3255" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="3255" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="1,-1,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Light Direction XYZ">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="1740" top="4110" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="4110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Colored">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Node" left="2625" top="1950" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="1950" width="1320" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Bump Amount|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Node" left="2625" top="2370" width="1605" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="2370" width="1605" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Bump Map Smooth|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="2625" top="2850" width="1260" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="2850" width="1260" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Bump Gamma|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23">
+   <BOUNDS type="Node" left="2625" top="3255" width="1665" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="3255" width="1665" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Light Direction XYZ|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Node" left="2625" top="4110" width="855" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2625" top="4110" width="855" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Colored|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Assets (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" nodename="Assets (EX9.Texture Source)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="675" top="1380" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="1380">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="10" dstpinname="Control">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="26">
+   <BOUNDS type="Node" left="600" top="6810" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="6810" width="2415" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|What is Bump Mapping?|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="600" top="7110" width="3375" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="7110" width="3375" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://en.wikipedia.org/wiki/Bump_mapping">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Url">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="28">
+   <BOUNDS type="Node" left="600" top="7500" width="2445" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="7500" width="3420" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|What is Emboss Bump Mapping?&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="600" top="7815" width="5250" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="7815" width="5250" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="https://www.techopedia.com/definition/26364/emboss-bump-mapping">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Url">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="600" top="8445" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="8445" width="1470" height="465">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|See also|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Bump (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Bump\Bump (EX9.Texture Filter).v4p" nodename="Bump (EX9.Texture Filter)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="600" top="8970" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="8970">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\LensDistort\LensDistort (EX9.Texture Filter).v4p">
-   <BOUNDS height="8550" left="7680" top="4275" type="Window" width="13080">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\LensDistort\LensDistort (EX9.Texture Filter).v4p">
+   <BOUNDS height="7155" left="3210" top="7290" type="Window" width="11985">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="LensDistort.fx" id="22" nodename="LensDistort.fx" systemname="LensDistort (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| LensDistort|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="LensDistort">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -73,12 +73,12 @@
    </BOUNDS>
    <BOUNDS height="160" left="8325" top="7905" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Input">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="20" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="Hidden" id="20" nodename="RENDERER (EX9)" systemname="RENDERER (EX9)">
    <BOUNDS height="0" left="2040" top="4830" type="Node" width="0">
    </BOUNDS>
    <BOUNDS height="1800" left="2040" top="4830" type="Box" width="2400">
@@ -98,6 +98,16 @@
    <PIN pinname="Enabled" visible="1">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,0.00000|">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
    </NODE>
    <LINK dstnodeid="20" dstpinname="Layers" linkstyle="PolyLine" srcnodeid="22" srcpinname="Layer">
@@ -195,7 +205,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -233,7 +243,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="6945" top="10350" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
    </PIN>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -262,34 +272,6 @@
    </LINK>
    <LINK dstnodeid="20" dstpinname="Enabled" srcnodeid="14" srcpinname="Output">
    </LINK>
-   <NODE componentmode="InABox" id="8" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4305" top="375" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="4305" top="375" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="21090" top="4140" type="Window" width="215">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="X" encoded="0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="7" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="5205" top="405" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="5205" top="405" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="21090" top="4140" type="Window" width="215">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Y" encoded="0">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE componentmode="InABox" id="6" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="6990" top="390" type="Node" width="0">
    </BOUNDS>
@@ -297,7 +279,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="20355" top="3735" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Radius" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Radius">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -311,7 +293,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="20355" top="3735" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Zoom" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Zoom">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -321,7 +303,7 @@
    <NODE componentmode="Hidden" id="4" nodename="RGB (Color Join)" systemname="RGB (Color Join)">
    <BOUNDS height="0" left="7770" top="1890" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Red" visible="1">
+   <PIN pinname="Red" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Green" visible="1">
    </PIN>
@@ -332,8 +314,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="4" dstpinname="Green" srcnodeid="7" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="4" dstpinname="Blue" srcnodeid="5" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="4" dstpinname="Alpha" srcnodeid="6" srcpinname="Y Output Value">
@@ -375,7 +355,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Keep Aspect Ratio|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Keep Aspect Ratio|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -410,12 +390,46 @@
    </LINK>
    <LINK dstnodeid="22" dstpinname="Count" srcnodeid="0" srcpinname="Count">
    </LINK>
-   <LINK dstnodeid="4" dstpinname="Red" srcnodeid="8" srcpinname="Y Output Value">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="X" dstnodeid="12" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Y" dstnodeid="12" dstpinname="Height">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Format" dstnodeid="12" dstpinname="Format">
    </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="4935" top="1080" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="4950" top="420" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4950" top="420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CenterXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Y" dstnodeid="4" dstpinname="Green">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="X" dstnodeid="4" dstpinname="Red">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

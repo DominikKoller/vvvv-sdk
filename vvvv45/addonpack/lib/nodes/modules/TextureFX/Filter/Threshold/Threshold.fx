@@ -1,5 +1,5 @@
 float2 R;
-float Threshold <float uimin=-1.0; float uimax=2.0;> = 0.3;
+float Threshold <float uimin=0.0; float uimax=1.0;> = 0.3;
 float AntiAlias <float uimin=0.0; float uimax=1.0;> = 0.0;
 bool Alpha = false;
 float4 Color1 = float4(0.0, 0.0, 0.0, 1.0);

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.2.dtd" >
-   <PATCH nodename="C:\Users\clone\Documents\CLONEPRODUCTION\RESSOURCES\VVVV\Effects\vvvv_FX\EX9.Texture Filter\Muffy\Muffy (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
-   <BOUNDS height="6015" left="6540" top="6780" type="Window" width="7785">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
+   <BOUNDS height="7155" left="5235" top="5385" type="Window" width="7620">
    </BOUNDS>
    <NODE componentmode="Hidden" id="5" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
    <BOUNDS height="270" left="1155" top="1650" type="Node" width="465">
@@ -113,7 +113,7 @@
    </BOUNDS>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Output">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="44" nodename="Switch (Node Input)" systemname="Switch (Node Input)">
@@ -177,7 +177,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="RingSize">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Ring Size|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -203,7 +203,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="RingAmount">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Amount">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -330,4 +330,6 @@
    </LINK>
    <LINK srcnodeid="76" srcpinname="Texture Out" dstnodeid="44" dstpinname="Input 2">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

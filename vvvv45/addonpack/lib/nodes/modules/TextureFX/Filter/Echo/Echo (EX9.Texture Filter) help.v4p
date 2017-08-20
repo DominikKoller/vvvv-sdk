@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Echo\Echo (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Echo\Echo (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="4635" top="1380" width="7410" height="9105">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2745" top="4305" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.75,0.75,0.75,0.75">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.57">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

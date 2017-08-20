@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.2.dtd" >
-   <PATCH nodename="C:\Users\clone\Documents\CLONEPRODUCTION\RESSOURCES\VVVV\Effects\vvvv_FX\EX9.Texture Filter\HatchDot\HatchDot (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
-   <BOUNDS height="7125" left="13200" top="4350" type="Window" width="8145">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\HatchDot\HatchDot (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
+   <BOUNDS height="12315" left="14775" top="2490" type="Window" width="14025">
    </BOUNDS>
    <NODE componentmode="Hidden" id="5" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
    <BOUNDS height="270" left="975" top="2370" type="Node" width="465">
@@ -248,8 +248,6 @@
    </LINK>
    <LINK dstnodeid="72" dstpinname="Mesh" srcnodeid="5" srcpinname="Mesh">
    </LINK>
-   <LINK dstnodeid="72" dstpinname="R XY" srcnodeid="49" srcpinname="XY">
-   </LINK>
    <LINK dstnodeid="17" dstpinname="Layers" srcnodeid="72" srcpinname="Layer">
    </LINK>
    <LINK dstnodeid="72" dstpinname="lum threshold 1" srcnodeid="56" srcpinname="Y Output Value">
@@ -330,4 +328,8 @@
    </LINK>
    <LINK srcnodeid="75" srcpinname="Texture Out" dstnodeid="44" dstpinname="Input 2">
    </LINK>
+   <LINK srcnodeid="49" srcpinname="XY" dstnodeid="72" dstpinname="R XY">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

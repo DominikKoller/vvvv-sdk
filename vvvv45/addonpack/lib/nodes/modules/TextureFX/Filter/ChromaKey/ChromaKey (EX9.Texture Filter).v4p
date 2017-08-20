@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta26.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\ChromaKey\ChromaKey (EX9.Texture Filter).v4p" componentmode="InAWindow" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\ChromaKey\ChromaKey (EX9.TextureFX).v4p" systemname="ChromaKey (EX9.TextureFX)">
-   <BOUNDS height="11235" left="13815" top="195" type="Window" width="10305">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\ChromaKey\ChromaKey (EX9.Texture Filter).v4p" componentmode="InAWindow" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\ChromaKey\ChromaKey (EX9.TextureFX).v4p" systemname="ChromaKey (EX9.TextureFX)">
+   <BOUNDS height="10455" left="6600" top="1575" type="Window" width="9225">
    </BOUNDS>
    <NODE componentmode="InABox" id="16" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="5175" top="3960" type="Node" width="0">
@@ -11,7 +11,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Range" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Range">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0.1">
    </PIN>
@@ -25,9 +25,15 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Bright Clip|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Bright Clip|">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0.3">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="0.2">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="14" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -39,7 +45,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Hue" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Hue">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0.5">
    </PIN>
@@ -50,7 +56,7 @@
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="12" nodename="RENDERER (EX9)" systemname="Renderer (EX9)">
+   <NODE componentmode="Hidden" id="12" nodename="RENDERER (EX9)" systemname="RENDERER (EX9)">
    <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,0.00000|">
    </PIN>
    <PIN pinname="Layers" visible="1">
@@ -79,6 +85,16 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="|1024 x 768|">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
    </NODE>
    <NODE componentmode="InABox" id="10" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="7755" top="4200" type="Node" width="100">
@@ -99,7 +115,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Enabled">
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -139,7 +155,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="6945" top="10350" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Output" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Output">
    </PIN>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -179,7 +195,7 @@
    </BOUNDS>
    <BOUNDS height="160" left="8325" top="7905" type="Window" width="215">
    </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Input">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
@@ -274,4 +290,6 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y" dstnodeid="8" dstpinname="Height">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

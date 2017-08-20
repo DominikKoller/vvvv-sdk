@@ -4,7 +4,7 @@ bool Mir;
 float Rotate;
 float2 Scale;
 texture tex0;
-sampler s0=sampler_state{Texture=(tex0);AddressU=CLAMP;AddressV=CLAMP;MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
+sampler s0=sampler_state{Texture=(tex0);AddressU=CLAMP;AddressV=CLAMP;MipFilter=None;MinFilter=LINEAR;MagFilter=LINEAR;};
 float2 r2d(float2 x,float a){return float2(cos(a)*x.x+sin(a)*x.y,cos(a)*x.y-sin(a)*x.x);}
 float4 p0(float2 x:TEXCOORD0):color{
     float2 dx=r2d(frac((x-.5)*Cells-.5)-.5,Rotate*acos(-1)*2)/Cells/Scale+.5;

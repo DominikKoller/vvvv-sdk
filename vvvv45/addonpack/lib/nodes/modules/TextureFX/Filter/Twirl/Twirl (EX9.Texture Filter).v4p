@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
-   <PATCH nodename="W:\projects\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter).v4p">
-   <BOUNDS height="8550" left="18090" top="1410" type="Window" width="8925">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter).v4p">
+   <BOUNDS height="7155" left="3210" top="7290" type="Window" width="11985">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Twirl.fx" id="22" nodename="Twirl.fx" systemname="Twirl (EX9.Effect)">
    <BOUNDS height="270" left="2025" top="3915" type="Node" width="5055">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| Twirl|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="Twirl">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -272,34 +272,6 @@
    </LINK>
    <LINK dstnodeid="20" dstpinname="Enabled" srcnodeid="14" srcpinname="Output">
    </LINK>
-   <NODE componentmode="InABox" id="8" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4305" top="375" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="4305" top="375" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="21090" top="4140" type="Window" width="215">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="X">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.55">
-   </PIN>
-   </NODE>
-   <NODE componentmode="InABox" id="7" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="5205" top="405" type="Node" width="0">
-   </BOUNDS>
-   <BOUNDS height="240" left="5205" top="405" type="Box" width="795">
-   </BOUNDS>
-   <BOUNDS height="160" left="21090" top="4140" type="Window" width="215">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Y">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE componentmode="InABox" id="6" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="6990" top="390" type="Node" width="0">
    </BOUNDS>
@@ -311,7 +283,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.23">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="0.5">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="5" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -325,7 +299,9 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="-1.04">
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="2">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="4" nodename="RGB (Color Join)" systemname="RGB (Color Join)">
@@ -342,8 +318,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK dstnodeid="4" dstpinname="Green" srcnodeid="7" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="4" dstpinname="Blue" srcnodeid="5" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="4" dstpinname="Alpha" srcnodeid="6" srcpinname="Y Output Value">
@@ -420,12 +394,46 @@
    </LINK>
    <LINK dstnodeid="22" dstpinname="Count" srcnodeid="0" srcpinname="Count">
    </LINK>
-   <LINK dstnodeid="4" dstpinname="Red" srcnodeid="8" srcpinname="Y Output Value">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="X" dstnodeid="12" dstpinname="Width">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Y" dstnodeid="12" dstpinname="Height">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Format" dstnodeid="12" dstpinname="Format">
    </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="23">
+   <BOUNDS type="Node" left="4725" top="960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="4740" top="300" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4740" top="300" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CenterXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="X" dstnodeid="4" dstpinname="Red">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Y" dstnodeid="4" dstpinname="Green">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Emboss\Emboss (EX9.Texture Filter).v4p">
-   <BOUNDS height="11415" left="4800" top="2355" type="Window" width="16020">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Emboss\Emboss (EX9.Texture Filter).v4p">
+   <BOUNDS height="7155" left="3210" top="7290" type="Window" width="11985">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="Emboss.fx" id="31" nodename="Emboss.fx" systemname="Emboss (EX9.Effect)">
    <BOUNDS height="270" left="1935" top="5865" type="Node" width="8505">
@@ -185,7 +185,7 @@
    </BOUNDS>
    <PIN pinname="Output Enum" visible="1">
    </PIN>
-   <PIN pinname="Input Enum" slicecount="1" values="| Clamp|">
+   <PIN pinname="Input Enum" slicecount="1" values="Clamp">
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Mode">
    </PIN>
@@ -277,13 +277,13 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="10" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="5430" top="5190" type="Node" width="0">
+   <BOUNDS height="0" left="4935" top="4440" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="5430" top="5190" type="Box" width="795">
+   <BOUNDS height="240" left="4935" top="4440" type="Box" width="795">
    </BOUNDS>
    <BOUNDS height="160" left="9735" top="10275" type="Window" width="215">
    </BOUNDS>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Map Smooth|">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Bump Map Smooth|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -389,9 +389,9 @@
    <LINK dstnodeid="31" dstpinname="MapSharp" srcnodeid="3" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="InABox" id="2" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="4560" top="5145" type="Node" width="0">
+   <BOUNDS height="0" left="3735" top="4470" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="240" left="4560" top="5145" type="Box" width="795">
+   <BOUNDS height="240" left="3735" top="4470" type="Box" width="795">
    </BOUNDS>
    <BOUNDS height="160" left="16665" top="8160" type="Window" width="215">
    </BOUNDS>
@@ -507,7 +507,7 @@
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\effects\Constant.fx" id="38" nodename="Constant (EX9.Effect)" systemname="Constant (EX9.Effect)">
    <BOUNDS height="100" left="6480" top="2445" type="Node" width="100">
    </BOUNDS>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -549,11 +549,13 @@
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Border Color|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Border Color|">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
    </NODE>
    <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="31" dstpinname="BorderCol">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

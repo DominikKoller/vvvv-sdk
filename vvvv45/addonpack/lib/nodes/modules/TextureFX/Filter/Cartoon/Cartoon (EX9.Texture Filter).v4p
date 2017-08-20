@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha28.5.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Cartoon\Cartoon (EX9.Texture Filter).v4p">
-   <BOUNDS height="9000" left="12150" top="3060" type="Window" width="11130">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
+   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Cartoon\Cartoon (EX9.Texture Filter).v4p">
+   <BOUNDS height="12315" left="6600" top="1575" type="Window" width="14025">
    </BOUNDS>
    <NODE componentmode="InABox" id="30" nodename="IOBox (Node)" systemname="IOBox (Node)">
    <BOUNDS height="0" left="360" top="90" type="Node" width="0">
@@ -211,7 +211,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="EdgeBoost">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Edge Boost|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -229,7 +229,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="ShadeGamma">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Shade Gamma|">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0.5">
    </PIN>
@@ -245,7 +245,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="EdgeWidth">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Edge Width|">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" filename="Cartoon.fx" id="75" nodename="Cartoon.fx" systemname="Cartoon (EX9.Effect)">
@@ -285,9 +285,11 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="ColorBoost">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Boost|">
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Y Output Value" dstnodeid="75" dstpinname="ColorBoost">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>
