@@ -1,10 +1,12 @@
 float2 R;
 float stitching_size <float uimin=0.0; string uiname="Stiching Size";> = 20.0;
+float thickness = 1;
 int invert <String uiname="Invert";> = 0;
 float4 ColorA:COLOR <String uiname="Stich Color";>  = {0, 0, 0, 1};
 
 texture Tex <string uiname="Texture";>;
-sampler Samp = sampler_state  {Texture=(Tex);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
+sampler Samp = sampler_state  {Texture=(Tex);MipFilter=None;MinFilter=LINEAR;MagFilter=LINEAR;};
+
 
 float4 Stitching(sampler2D tex, float2 uv)
 {
@@ -19,8 +21,8 @@ float4 Stitching(sampler2D tex, float2 uv)
   tlPos = cPos;
   float2 blPos = tlPos;
   blPos.y += (size - 1.0);
-  if ((remX == remY) ||
-     (((int(cPos.x) - int(blPos.x)) == (int(blPos.y) - int(cPos.y)))))
+  if ((abs(remX - remY) < thickness) ||
+     ((abs((int(cPos.x) - int(blPos.x)) - (int(blPos.y) - int(cPos.y))) < thickness)))
   {
     if (invert == 1)
       c = ColorA;

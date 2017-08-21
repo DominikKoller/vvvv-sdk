@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\HatchLine\HatchLine (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching (EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\HatchLine\HatchLine (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching (EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
    <BOUNDS height="6330" left="11295" top="7560" type="Window" width="9330">
    </BOUNDS>
    <NODE componentmode="Hidden" id="5" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
@@ -214,6 +214,10 @@
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Thickness">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
    </NODE>
    <INFO author="lecloneur" description="Hatch line filter" tags="fx">

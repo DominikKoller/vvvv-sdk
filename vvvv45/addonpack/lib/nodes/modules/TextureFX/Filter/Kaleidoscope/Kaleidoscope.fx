@@ -1,7 +1,7 @@
 float2 R;
 
 int Divisions <float uimin=1;> =5;
-int Iterations <float uimin=1;float uimax=70;> =2;
+int Iterations <float uimin=1;float uimax=70;> =1;
 float Rotate;
 float Zoom =0;
 float2 Center <float uimin=-1.0; float uimax=1.0;> =0.0;

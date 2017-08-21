@@ -1,7 +1,7 @@
 float2 R;
 bool Aspect;
-float Radius;
-float Threshold=.2;
+float Radius=1;
+float Threshold=1;
 float4 BorderCol:COLOR ={0.0,0.0,0.0,1.0};
 texture tex0,tex1;
 sampler s0=sampler_state{Texture=(tex0);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
