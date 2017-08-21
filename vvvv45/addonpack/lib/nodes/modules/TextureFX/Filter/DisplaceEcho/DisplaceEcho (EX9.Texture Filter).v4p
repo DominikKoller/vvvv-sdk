@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.dtd" >
-   <PATCH nodename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DisplaceEcho\DisplaceEcho (EX9.Texture Filter).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\DisplaceEcho\DisplaceEcho (EX9.Texture Filter).v4p">
    <BOUNDS height="8010" left="8730" top="5595" type="Window" width="11310">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="DisplaceEcho.fx" id="27" nodename="DisplaceEcho.fx" systemname="DisplaceEcho (EX9.Effect)">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" slicecount="1" visible="1" values="| DisplaceEcho|">
+   <PIN pinname="Technique" slicecount="1" visible="1" values="DisplaceEcho">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -311,7 +311,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.85">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.3">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="6" nodename="Vector (2d Split)" systemname="Vector (2d Split)">
@@ -498,4 +498,8 @@
    </LINK>
    <LINK dstnodeid="34" dstpinname="Texture In" srcnodeid="35" srcpinname="Output">
    </LINK>
+   <LINK srcnodeid="23" srcpinname="XY" dstnodeid="6" dstpinname="XY">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>
