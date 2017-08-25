@@ -290,4 +290,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="HatchFromTexture (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchFromTexture\HatchFromTexture (EX9.Texture Filter).v4p" nodename="HatchFromTexture (EX9.Texture Filter)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="1815" top="9225" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>

@@ -20,16 +20,16 @@ texture Tex2 <string uiname="Control";>;
 sampler Samp = sampler_state    //sampler for doing the texture-lookup
 {
     Texture   = (Tex);          //apply a texture to the sampler
-    MipFilter = LINEAR;         //sampler states
-    MinFilter = LINEAR;
-    MagFilter = LINEAR;
+    MipFilter = None;         //sampler states
+    MinFilter = None;
+    MagFilter = None;
 };
 sampler Samp2 = sampler_state    //sampler for doing the texture-lookup
 {
     Texture   = (Tex2);          //apply a texture to the sampler
-    MipFilter = LINEAR;         //sampler states
-    MinFilter = LINEAR;
-    MagFilter = LINEAR;
+    MipFilter = None;         //sampler states
+    MinFilter = None;
+    MagFilter = None;
 };
 
 //texture transformation marked with semantic TEXTUREMATRIX to achieve symmetric transformations
@@ -69,10 +69,11 @@ vs2ps VS(
 
 float4 PS(vs2ps In): COLOR
 {
-	float4 disp = tex2D(Samp2, In.TexCd).a;
-//	float dist = (disp.r + disp.g + disp.b);
-	float3 dir = tex2D(Samp2, In.TexCd).rgb;
-	float4 col = tex2D(Samp, In.TexCd + disp * (dir.rg));// - float2(0.5, 0.5)));
+	float4 displacementSample = tex2D(Samp2, In.TexCd);
+	float2 displacement = displacementSample.rg * displacementSample.a;
+	displacement -= float2(0.5, 0.5);
+	displacement.g= -displacement.g; // to accord to vvvv coordinates. See helppatch.
+	float4 col = tex2D(Samp, In.TexCd + displacement);
     return col;
 }
 

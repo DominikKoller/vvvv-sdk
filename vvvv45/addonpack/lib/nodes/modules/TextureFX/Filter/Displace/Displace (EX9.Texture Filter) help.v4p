@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Displace\Displace (EX9.Texture Filter) help.v4p" systemname="Displace (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Displace\Displace (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="6195" top="4125" width="5700" height="6975">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Displace\Displace (EX9.Texture Filter) help.v4p" systemname="Displace (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Displace\Displace (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="6195" top="4125" width="5700" height="7935">
    </BOUNDS>
    <NODE systemname="TexCoords (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\TexCoords\TexCoords (EX9.Texture Source).v4p" nodename="TexCoords (EX9.Texture Source)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="660" top="1965" width="100" height="100">
@@ -192,4 +192,24 @@
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="71" dstpinname="Texture">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86">
+   <BOUNDS type="Node" left="390" top="6300" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="390" top="6300" width="1545" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|See also|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="DisplacementMap (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DisplacementMap\DisplacementMap (EX9.Texture Filter).v4p" nodename="DisplacementMap (EX9.Texture Filter)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="435" top="6765" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>

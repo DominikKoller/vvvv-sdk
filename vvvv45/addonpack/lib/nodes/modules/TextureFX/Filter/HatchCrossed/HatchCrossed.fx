@@ -8,7 +8,7 @@ float lum_threshold_4;
 int density <float uimin=0;String uiname="Density";> = 12;
 
 texture Tex <string uiname="Texture";>;
-sampler Samp = sampler_state  {Texture=(Tex);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;};
+sampler Samp = sampler_state  {Texture=(Tex);MipFilter=Linear;MinFilter=Linear;MagFilter=Linear;};
 
 float4 p0(float2 vp : vpos): COLOR
 {	

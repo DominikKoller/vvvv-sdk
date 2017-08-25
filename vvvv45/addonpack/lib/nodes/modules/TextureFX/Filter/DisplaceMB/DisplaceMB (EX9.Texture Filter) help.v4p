@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\DisplaceMB\DisplaceMB (EX9.Texture Filter) help.v4p" scrollx="45" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\DisplaceMB\DisplaceMB (EX9.Texture Filter) help.v4p" scrollx="45" scrolly="-360">
    <BOUNDS type="Window" left="2580" top="735" width="5400" height="4980">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
@@ -37,7 +37,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="3495" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="5325" top="2760" width="2835" height="2595">
+   <BOUNDS type="Window" left="7830" top="705" width="4020" height="3810">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>

@@ -183,27 +183,3 @@ technique PolarToCartesian
         PixelShader  = compile ps_2_0 psCartCoordinates();
     }
 }
-
-technique TFixedFunction
-{
-    pass P0
-    {
-        //transforms
-        WorldTransform[0]   = (tW);
-        ViewTransform       = (tV);
-        ProjectionTransform = (tP);
-
-        //texturing
-        Sampler[0] = (Samp);
-        TextureTransform[0] = (tTex);
-        TexCoordIndex[0] = 0;
-        TextureTransformFlags[0] = COUNT2;
-        //Wrap0 = U;  // useful when mesh is round like a sphere
-
-        Lighting       = FALSE;
-
-        //shaders
-        VertexShader = NULL;
-        PixelShader  = NULL;
-    }
-}

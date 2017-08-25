@@ -1,7 +1,6 @@
 float2 R;
 bool Aspect;
-float BlurX <float uimin=-1.0; float uimax=1.0;> = 0.1;
-float BlurY <float uimin=-1.0; float uimax=1.0;> = 0.0;
+float2 Direction <float uimin=-1.0; float uimax=1.0;> = float2(0.1, 0.1);
 float Width=1;
 float4 BorderCol:COLOR ={0.0,0.0,0.0,1.0};
 texture tex0,tex1;
@@ -14,7 +13,7 @@ float4 p0(float2 vp:vpos):color{float2 x=(vp+.5)/R;float2 asp=lerp(1,R.x/R,Aspec
     float wd=Width*tex2D(s1,x);
     for (float i=0;i<1;i+=1./16){
 	float k=1;
-        c+=tex2D(s0,((x-.5)/asp+2*float2(BlurX,BlurY)*wd*(i))*asp+.5)*k;
+        c+=tex2D(s0,((x-.5)/asp+2*Direction*wd*(i))*asp+.5)*k;
         kk+=k;
     }
     c=c/kk;

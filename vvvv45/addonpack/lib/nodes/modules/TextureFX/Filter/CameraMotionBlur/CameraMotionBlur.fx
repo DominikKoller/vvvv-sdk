@@ -13,11 +13,11 @@ float4x4 tV_p;
 
 float3 posCam : CAMERAPOSITION;
 texture texCOL;
-sampler sCOL=sampler_state{Texture=(texCOL);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;AddressU=WRAP;AddressV=WRAP;};
+sampler sCOL=sampler_state{Texture=(texCOL);MipFilter=None;MinFilter=None;MagFilter=None;AddressU=WRAP;AddressV=WRAP;};
 texture texDEP1;
-sampler sDEP1=sampler_state{Texture=(texDEP1);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;AddressU=WRAP;AddressV=WRAP;};
+sampler sDEP1=sampler_state{Texture=(texDEP1);MipFilter=None;MinFilter=None;MagFilter=None;AddressU=WRAP;AddressV=WRAP;};
 texture texDEP2;
-sampler sDEP2=sampler_state{Texture=(texDEP2);MipFilter=LINEAR;MinFilter=LINEAR;MagFilter=LINEAR;AddressU=WRAP;AddressV=WRAP;};
+sampler sDEP2=sampler_state{Texture=(texDEP2);MipFilter=None;MinFilter=None;MagFilter=None;AddressU=WRAP;AddressV=WRAP;};
 
 float4 UVDtoXYZ(float3 x){
 	float4 p=float4(-1.0+2.0*x.x,-1.0+2.0*x.y,-1.0+2.0*x.z,1.0);

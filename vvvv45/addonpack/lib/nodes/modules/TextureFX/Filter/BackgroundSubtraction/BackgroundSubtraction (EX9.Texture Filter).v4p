@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta27.1.dtd" >
-   <PATCH nodename="D:\Dropbox\TextureFX\modules\BackgroundSubtraction\BackgroundSubtraction (EX9.Texture Filter).v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\BackgroundSubtraction\BackgroundSubtraction (EX9.Texture Filter).v4p">
    <BOUNDS height="9900" left="11085" top="4860" type="Window" width="11160">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="BackgroundSubtraction.fx" id="24" nodename="BackgroundSubtraction.fx" systemname="BackgroundSubtraction (EX9.Effect)">
@@ -19,7 +19,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Technique" visible="1" slicecount="1" values="| BackgroundSubtraction|">
+   <PIN pinname="Technique" visible="1" slicecount="1" values="BackgroundSubtraction">
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
@@ -190,7 +190,7 @@
    </LINK>
    <LINK dstnodeid="11" dstpinname="Input Node" srcnodeid="8" srcpinname="Output">
    </LINK>
-   <INFO author="unc" description="Alpha based on difference between two images" tags="fx">
+   <INFO author="unc" description="Alpha based on difference between two images" tags="fx, Keying">
    </INFO>
    <NODE componentmode="InABox" id="7" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="9420" top="4515" type="Node" width="0">
@@ -275,13 +275,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4665" top="3090" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.05">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.21">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Threshold" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Threshold">
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Threshold">
@@ -291,13 +291,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5865" top="3240" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.05">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.17">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Softness" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Softness">
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Softness">
@@ -309,7 +309,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -317,7 +317,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Invert" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Invert">
    </PIN>
    <PIN pinname="Pin Visibility" slicecount="1" values="OnlyInspector">
    </PIN>
@@ -326,4 +326,6 @@
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Invert">
    </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
    </PATCH>

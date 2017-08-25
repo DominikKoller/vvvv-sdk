@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\DepthToWorld\DepthToWorld (EX9.Texture Filter) help.v4p" systemname="DepthToWorld (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DepthToWorld\DepthToWorld (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\DepthToWorld\DepthToWorld (EX9.Texture Filter) help.v4p" systemname="DepthToWorld (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DepthToWorld\DepthToWorld (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-90">
    <BOUNDS type="Window" left="0" top="195" width="14475" height="14715">
    </BOUNDS>
    <NODE componentmode="InABox" id="21" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -40,18 +40,6 @@
    <PIN pinname="Actual Backbuffer Height" visible="1">
    </PIN>
    <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <NODE id="42" componentmode="Hidden" systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" stayontop="0" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="1155" top="9300" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4905" top="2595" width="20730" height="9105">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1155" top="9300" width="4800" height="3600">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
    <NODE systemname="DepthToWorld (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DepthToWorld\DepthToWorld (EX9.Texture Filter).v4p" nodename="DepthToWorld (EX9.Texture Filter)" componentmode="Hidden" id="45">
@@ -259,8 +247,6 @@
    <LINK srcnodeid="59" srcpinname="Render State Out" dstnodeid="48" dstpinname="Render State">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Transform Out" dstnodeid="57" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="42" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="91">
    <BOUNDS type="Node" left="3090" top="3015" width="1845" height="270">
@@ -483,8 +469,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="124" srcpinname="Layer" dstnodeid="123" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="43" dstpinname="Layers">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="125">
    <BOUNDS type="Node" left="5340" top="9780" width="4650" height="270">
@@ -953,5 +937,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="150" dstpinname="Far Plane">
+   </LINK>
+   <NODE id="42" componentmode="Hidden" systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" stayontop="0" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="1155" top="9300" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12855" top="9090" width="20730" height="9105">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1155" top="9300" width="4800" height="3600">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="42" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="43" dstpinname="Layers">
    </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\HatchCrossed\HatchCrossed (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="6375" top="1380" width="6210" height="9330">
+   <BOUNDS type="Window" left="6375" top="1380" width="6210" height="10710">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -65,7 +65,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1830" top="2580" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4.22">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5.71">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1830" top="3060" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0219">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0805">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -212,40 +212,6 @@
    </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE systemname="HatchCrossed (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchCrossed\HatchCrossed (EX9.Texture Filter).v4p" nodename="HatchCrossed (EX9.Texture Filter)" componentmode="Hidden" id="11">
-   <BOUNDS type="Node" left="600" top="5535" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="600" top="5535">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1950" top="1995" width="7620" height="12315">
-   </BOUNDS>
-   <PIN pinname="Line Color" visible="1">
-   </PIN>
-   <PIN pinname="Rotation" visible="1">
-   </PIN>
-   <PIN pinname="Thickness" visible="1" slicecount="1" values="0.0319">
-   </PIN>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Hatch Color" visible="1">
-   </PIN>
-   <PIN pinname="Density" slicecount="1" values="0.0319">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="11" dstpinname="Dot Color">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Color Output" dstnodeid="11" dstpinname="Background Color">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Threshold">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="11" dstpinname="Square Color">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Rotation">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="11" dstpinname="Hatch Color">
-   </LINK>
    <NODE systemname="HatchSquare (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchSquare\HatchSquare (EX9.Texture Filter).v4p" nodename="HatchSquare (EX9.Texture Filter)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="450" top="8175" width="100" height="100">
    </BOUNDS>
@@ -270,12 +236,6 @@
    </NODE>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="25" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="11" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="15" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Thickness">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="28">
    <BOUNDS type="Node" left="1605" top="1830" width="4470" height="270">
    </BOUNDS>
@@ -292,6 +252,50 @@
    </NODE>
    <NODE systemname="CrossStitching (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\CrossStitching\CrossStitching (EX9.Texture Filter).v4p" nodename="CrossStitching (EX9.Texture Filter)" componentmode="Hidden" id="29">
    <BOUNDS type="Node" left="4365" top="8175" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="30">
+   <BOUNDS type="Node" left="525" top="9135" width="3525" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="525" top="9135" width="4665" height="645">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Bug: seems to have problems with interferences of texture resolution and Thickness.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Url">
+   </PIN>
+   </NODE>
+   <NODE systemname="HatchCrossed (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchCrossed\HatchCrossed (EX9.Texture Filter).v4p" nodename="HatchCrossed (EX9.Texture Filter)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="600" top="5535" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="600" top="5535">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1950" top="1995" width="7620" height="12315">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="33" dstpinname="Dot Color">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Color Output" dstnodeid="33" dstpinname="Background Color">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Threshold">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="33" dstpinname="Square Color">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Rotation">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Color Output" dstnodeid="33" dstpinname="Hatch Color">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Output" dstnodeid="33" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="15" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Thickness">
+   </LINK>
+   <NODE systemname="HatchFromTexture (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchFromTexture\HatchFromTexture (EX9.Texture Filter).v4p" nodename="HatchFromTexture (EX9.Texture Filter)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="450" top="8655" width="100" height="100">
    </BOUNDS>
    </NODE>
    </PATCH>
