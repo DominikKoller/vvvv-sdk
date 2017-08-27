@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" scrollx="0" scrolly="0">
    <BOUNDS height="10050" left="7320" top="1185" type="Window" width="25155">
    </BOUNDS>
    <NODE componentmode="InABox" id="47" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -227,7 +227,7 @@
    </PIN>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Index">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="5">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
@@ -235,7 +235,7 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="10000">
    </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="-10000">
+   <PIN pinname="Minimum" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK dstnodeid="37" dstpinname="Index" linkstyle="VHV" srcnodeid="36" srcpinname="Y Output Value">
@@ -427,9 +427,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="28" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="6360" top="3855" type="Node" width="0">
+   <BOUNDS height="0" left="8820" top="3570" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="480" left="6360" top="3855" type="Box" width="480">
+   <BOUNDS height="480" left="8820" top="3570" type="Box" width="480">
    </BOUNDS>
    <BOUNDS height="160" left="18075" top="5985" type="Window" width="215">
    </BOUNDS>
@@ -457,7 +457,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="27" nodename="SystemFolder (File)" systemname="SystemFolder (File)">
-   <BOUNDS height="0" left="7080" top="3765" type="Node" width="0">
+   <BOUNDS height="0" left="9540" top="3480" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Folder" slicecount="1" values="Application">
    </PIN>
@@ -467,7 +467,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="26" nodename="Add (String)" systemname="Add (String)">
-   <BOUNDS height="0" left="7080" top="4125" type="Node" width="0">
+   <BOUNDS height="0" left="9540" top="3840" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -477,13 +477,13 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="26" dstpinname="Input 1" linkstyle="VHV" srcnodeid="27" srcpinname="Output">
-   <LINKPOINT x="7110" y="4080">
+   <LINKPOINT x="9570" y="3795">
    </LINKPOINT>
-   <LINKPOINT x="7110" y="4080">
+   <LINKPOINT x="9570" y="3795">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="25" nodename="Dir (File)" systemname="Dir (File)">
-   <BOUNDS height="0" left="6930" top="4635" type="Node" width="0">
+   <BOUNDS height="0" left="9390" top="4350" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Directory" visible="1">
    </PIN>
@@ -499,15 +499,15 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="25" dstpinname="Mask" linkstyle="VHV" srcnodeid="33" srcpinname="Output String">
-   <LINKPOINT x="11470" y="3425">
+   <LINKPOINT x="12290" y="3330">
    </LINKPOINT>
-   <LINKPOINT x="7715" y="3145">
+   <LINKPOINT x="9355" y="2955">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="25" dstpinname="Directory" linkstyle="VHV" srcnodeid="26" srcpinname="Output">
-   <LINKPOINT x="7110" y="4515">
+   <LINKPOINT x="9570" y="4230">
    </LINKPOINT>
-   <LINKPOINT x="7110" y="4515">
+   <LINKPOINT x="9570" y="4230">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="InABox" id="24" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -599,9 +599,9 @@
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="25" dstpinname="Update" linkstyle="VHV" srcnodeid="22" srcpinname="Output">
-   <LINKPOINT x="16610" y="3518">
+   <LINKPOINT x="17430" y="3423">
    </LINKPOINT>
-   <LINKPOINT x="8305" y="3218">
+   <LINKPOINT x="9945" y="3028">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="32" dstpinname="Directory" linkstyle="VHV" srcnodeid="34" srcpinname="Output">
@@ -629,7 +629,7 @@
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="20" nodename="Switch (String Input)" systemname="Switch (String Input)">
-   <BOUNDS height="0" left="6360" top="5010" type="Node" width="0">
+   <BOUNDS height="0" left="8820" top="4725" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -641,9 +641,9 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="20" dstpinname="Input 2" linkstyle="VHV" srcnodeid="25" srcpinname="Filenames">
-   <LINKPOINT x="6945" y="4958">
+   <LINKPOINT x="9405" y="4673">
    </LINKPOINT>
-   <LINKPOINT x="6945" y="4958">
+   <LINKPOINT x="9405" y="4673">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" hiddenwhenlocked="0" id="19" managers="" nodename="Switch (String Input)" systemname="Switch (String Input)">
@@ -713,7 +713,7 @@
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="16" nodename="OR (Boolean)" systemname="OR (Boolean)">
-   <BOUNDS height="0" left="6360" top="4635" type="Node" width="0">
+   <BOUNDS height="0" left="8820" top="4350" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -721,15 +721,15 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="16" dstpinname="Input 1" linkstyle="VHV" srcnodeid="28" srcpinname="Y Output Value">
-   <LINKPOINT x="6780" y="4470">
+   <LINKPOINT x="9240" y="4185">
    </LINKPOINT>
-   <LINKPOINT x="6420" y="4470">
+   <LINKPOINT x="8880" y="4185">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="20" dstpinname="Switch" linkstyle="VHV" srcnodeid="16" srcpinname="Output">
-   <LINKPOINT x="6390" y="4958">
+   <LINKPOINT x="8850" y="4673">
    </LINKPOINT>
-   <LINKPOINT x="6390" y="4958">
+   <LINKPOINT x="8850" y="4673">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="InABox" id="15" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -867,9 +867,9 @@
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="25" dstpinname="Include Hidden" linkstyle="VHV" srcnodeid="11" srcpinname="Y Output Value">
-   <LINKPOINT x="15435" y="3233">
+   <LINKPOINT x="16255" y="3138">
    </LINKPOINT>
-   <LINKPOINT x="8040" y="3023">
+   <LINKPOINT x="9680" y="2833">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="14" dstpinname="Include Hidden" linkstyle="VHV" srcnodeid="11" srcpinname="Y Output Value">
@@ -921,9 +921,9 @@
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="25" dstpinname="Include Subdirectories" linkstyle="VHV" srcnodeid="10" srcpinname="Y Output Value">
-   <LINKPOINT x="13680" y="3233">
+   <LINKPOINT x="14500" y="3138">
    </LINKPOINT>
-   <LINKPOINT x="7815" y="3023">
+   <LINKPOINT x="9455" y="2833">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="14" dstpinname="Include Subdirectories" linkstyle="VHV" srcnodeid="10" srcpinname="Y Output Value">
@@ -989,8 +989,6 @@
    <LINK dstnodeid="48" dstpinname="Input 1" srcnodeid="19" srcpinname="Output">
    </LINK>
    <LINK dstnodeid="48" dstpinname="Input 2" srcnodeid="21" srcpinname="Output">
-   </LINK>
-   <LINK dstnodeid="48" dstpinname="Input 3" srcnodeid="20" srcpinname="Output">
    </LINK>
    <LINK dstnodeid="37" dstpinname="Input" linkstyle="VHV" srcnodeid="48" srcpinname="Output">
    <LINKPOINT x="1935" y="5940">
@@ -1171,9 +1169,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="20" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="11450" y="5048">
+   <LINKPOINT x="12270" y="4953">
    </LINKPOINT>
-   <LINKPOINT x="7645" y="5168">
+   <LINKPOINT x="9285" y="4978">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="13" dstpinname="Input 1" linkstyle="VHV">
@@ -1265,9 +1263,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE componentmode="InABox" id="72" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
-   <BOUNDS height="0" left="8340" top="3420" type="Node" width="0">
+   <BOUNDS height="0" left="6285" top="3645" type="Node" width="0">
    </BOUNDS>
-   <BOUNDS height="480" left="8340" top="3420" type="Box" width="480">
+   <BOUNDS height="480" left="6285" top="3645" type="Box" width="480">
    </BOUNDS>
    <BOUNDS height="160" left="18075" top="5985" type="Window" width="215">
    </BOUNDS>
@@ -1295,7 +1293,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="71" nodename="SystemFolder (File)" systemname="SystemFolder (File)">
-   <BOUNDS height="0" left="9060" top="3330" type="Node" width="0">
+   <BOUNDS height="0" left="7005" top="3555" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Folder" slicecount="1" values="Application">
    </PIN>
@@ -1305,7 +1303,7 @@
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="70" nodename="Add (String)" systemname="Add (String)">
-   <BOUNDS height="0" left="9060" top="3690" type="Node" width="0">
+   <BOUNDS height="0" left="7005" top="3915" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1315,13 +1313,13 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="70" dstpinname="Input 1" linkstyle="VHV" srcnodeid="71" srcpinname="Output">
-   <LINKPOINT x="9090" y="3645">
+   <LINKPOINT x="7035" y="3870">
    </LINKPOINT>
-   <LINKPOINT x="9090" y="3645">
+   <LINKPOINT x="7035" y="3870">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="69" nodename="Dir (File)" systemname="Dir (File)">
-   <BOUNDS height="0" left="8910" top="4200" type="Node" width="0">
+   <BOUNDS height="0" left="6855" top="4425" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Directory" visible="1">
    </PIN>
@@ -1337,13 +1335,13 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="69" dstpinname="Directory" linkstyle="VHV" srcnodeid="70" srcpinname="Output">
-   <LINKPOINT x="9090" y="4080">
+   <LINKPOINT x="7035" y="4305">
    </LINKPOINT>
-   <LINKPOINT x="9090" y="4080">
+   <LINKPOINT x="7035" y="4305">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="68" nodename="Switch (String Input)" systemname="Switch (String Input)">
-   <BOUNDS height="0" left="8340" top="4575" type="Node" width="0">
+   <BOUNDS height="0" left="6285" top="4800" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
    </PIN>
@@ -1355,13 +1353,13 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="68" dstpinname="Input 2" linkstyle="VHV" srcnodeid="69" srcpinname="Filenames">
-   <LINKPOINT x="8925" y="4523">
+   <LINKPOINT x="6870" y="4748">
    </LINKPOINT>
-   <LINKPOINT x="8925" y="4523">
+   <LINKPOINT x="6870" y="4748">
    </LINKPOINT>
    </LINK>
    <NODE componentmode="Hidden" id="67" nodename="OR (Boolean)" systemname="OR (Boolean)">
-   <BOUNDS height="0" left="8340" top="4200" type="Node" width="0">
+   <BOUNDS height="0" left="6285" top="4425" type="Node" width="0">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1369,19 +1367,21 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="67" dstpinname="Input 1" linkstyle="VHV" srcnodeid="72" srcpinname="Y Output Value">
-   <LINKPOINT x="8760" y="4035">
+   <LINKPOINT x="6705" y="4260">
    </LINKPOINT>
-   <LINKPOINT x="8400" y="4035">
+   <LINKPOINT x="6345" y="4260">
    </LINKPOINT>
    </LINK>
    <LINK dstnodeid="68" dstpinname="Switch" linkstyle="VHV" srcnodeid="67" srcpinname="Output">
-   <LINKPOINT x="8370" y="4523">
+   <LINKPOINT x="6315" y="4748">
    </LINKPOINT>
-   <LINKPOINT x="8370" y="4523">
+   <LINKPOINT x="6315" y="4748">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="48" dstpinname="Input 5">
    </LINK>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="48" dstpinname="Input 4">
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="48" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="48" dstpinname="Input 4">
    </LINK>
    </PATCH>

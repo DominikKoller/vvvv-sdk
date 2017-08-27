@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalMap\NormalMap (EX9.Texture Filter) help.v4p" systemname="NormalMap (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalMap\NormalMap (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\NormalMap\NormalMap (EX9.Texture Filter) help.v4p" systemname="NormalMap (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalMap\NormalMap (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="6255" top="1395" width="6315" height="11085">
    </BOUNDS>
    <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -243,7 +243,7 @@
    </BOUNDS>
    <PIN pinname="Include VVVV Assets" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="0">
+   <PIN pinname="Index" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -312,4 +312,6 @@
    <PIN pinname="String Type" slicecount="1" values="Url">
    </PIN>
    </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

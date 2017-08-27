@@ -41,23 +41,27 @@
    </PIN>
    <BOUNDS type="Box" left="555" top="1410">
    </BOUNDS>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="60">
    <BOUNDS type="Node" left="555" top="5490" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="555" top="5490" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="11475" top="1035" width="6240" height="5085">
+   <BOUNDS type="Window" left="11475" top="4425" width="7125" height="5325">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Result">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58">
-   <BOUNDS type="Box" left="855" top="2760" width="1245" height="435">
+   <BOUNDS type="Box" left="855" top="3360" width="1245" height="435">
    </BOUNDS>
-   <BOUNDS type="Node" left="855" top="2760" width="0" height="0">
+   <BOUNDS type="Node" left="855" top="3360" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.24">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -71,9 +75,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="68">
-   <BOUNDS type="Node" left="2280" top="2820" width="855" height="270">
+   <BOUNDS type="Node" left="2280" top="3420" width="855" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2280" top="2820" width="1260" height="330">
+   <BOUNDS type="Box" left="2280" top="3420" width="1260" height="330">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Amount|">
    </PIN>
@@ -87,9 +91,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Glow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Glow\Glow (EX9.Texture Filter).v4p" nodename="Glow (EX9.Texture Filter)" componentmode="Hidden" id="73">
-   <BOUNDS type="Node" left="555" top="3450" width="100" height="100">
+   <BOUNDS type="Node" left="555" top="4050" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="555" top="3450">
+   <BOUNDS type="Box" left="555" top="4050">
    </BOUNDS>
    <BOUNDS type="Window" left="6900" top="2430" width="17910" height="14655">
    </BOUNDS>
@@ -186,4 +190,58 @@
    </LINK>
    <LINK srcnodeid="73" srcpinname="Output" dstnodeid="61" dstpinname="Texture">
    </LINK>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="675" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="675" top="1815">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="83">
+   <BOUNDS type="Node" left="675" top="2190" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="675" top="2190" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11460" top="1020" width="4560" height="3465">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Layer" dstnodeid="83" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="82" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84">
+   <BOUNDS type="Node" left="2130" top="5490" width="1380" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2130" top="5490" width="1380" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Second Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="85">
+   <BOUNDS type="Node" left="2280" top="2175" width="1215" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2280" top="2175" width="1215" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; First Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -49,6 +49,10 @@
    </PIN>
    <BOUNDS type="Box" left="960" top="2625">
    </BOUNDS>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="DistortFlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DistortFlow\DistortFlow (EX9.Texture Filter).v4p" nodename="DistortFlow (EX9.Texture Filter)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="975" top="3165" width="100" height="100">
@@ -242,4 +246,20 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Info (EX9.Texture)" nodename="Info (EX9.Texture)" componentmode="Hidden" id="91">
+   <BOUNDS type="Node" left="1455" top="1470" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Width" visible="1">
+   </PIN>
+   <PIN pinname="Height" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="91" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Width" dstnodeid="35" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Height" dstnodeid="35" dstpinname="Height">
+   </LINK>
    </PATCH>

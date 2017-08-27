@@ -179,7 +179,7 @@
    </PIN>
    <PIN pinname="Boost" visible="1">
    </PIN>
-   <PIN pinname="Signed" slicecount="1" values="1" visible="1">
+   <PIN pinname="Signed" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Alpha" visible="1">
    </PIN>
@@ -450,4 +450,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

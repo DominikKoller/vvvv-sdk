@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\Swizzle\Swizzle (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Swizzle\Swizzle (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1320" top="2280" width="7605" height="7710">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -79,7 +79,7 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="30" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3405" top="5940" width="1455" height="330">
+   <BOUNDS type="Box" left="3405" top="5940" width="1380" height="360">
    </BOUNDS>
    <BOUNDS type="Node" left="3405" top="5940" width="0" height="0">
    </BOUNDS>
@@ -95,9 +95,9 @@
    <LINK srcnodeid="27" srcpinname="Format Description" dstnodeid="30" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="3495" top="5775" width="7530" height="270">
+   <BOUNDS type="Node" left="3120" top="5790" width="7530" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="3495" top="5775" width="300" height="615">
+   <BOUNDS type="Box" left="3120" top="5790" width="300" height="615">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="!">
    </PIN>
@@ -134,16 +134,6 @@
    <BOUNDS type="Box" left="1110" top="1395">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="1110" top="5490" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="1110" top="5490">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="37">
    <BOUNDS type="Node" left="1110" top="6000" width="100" height="100">
    </BOUNDS>
@@ -151,11 +141,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="8880" top="2280" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="37" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Swizzle (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Swizzle\Swizzle (EX9.Texture Filter).v4p" nodename="Swizzle (EX9.Texture Filter)" componentmode="Hidden" id="36">
    <BOUNDS type="Node" left="1110" top="4560" width="100" height="100">
    </BOUNDS>
@@ -196,8 +184,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="38" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="36" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="36" dstpinname="Texture">
@@ -324,4 +310,18 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="1110" top="5490" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1110" top="5490">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Layer" dstnodeid="37" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="38" dstpinname="Texture">
+   </LINK>
    </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Median\Median (EX9.Texture Filter) help.v4p" systemname="Median (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Median\Median (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="2610" top="2340" width="6570" height="10425">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Median\Median (EX9.Texture Filter) help.v4p" systemname="Median (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Median\Median (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="2610" top="2340" width="6570" height="11355">
    </BOUNDS>
    <NODE componentmode="InABox" id="33" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="270" left="540" top="315" type="Node" width="915">
@@ -26,30 +26,18 @@
    <BOUNDS type="Box" left="540" top="1365">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="70">
-   <BOUNDS type="Node" left="540" top="6840" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="540" top="6840">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="69">
    <BOUNDS type="Node" left="540" top="7350" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="540" top="7350" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="9180" top="7020" width="4830" height="4695">
+   <BOUNDS type="Window" left="9135" top="7575" width="6075" height="6090">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Second">
    </PIN>
    </NODE>
-   <LINK srcnodeid="70" srcpinname="Layer" dstnodeid="69" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Median (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Median\Median (EX9.Texture Filter).v4p" nodename="Median (EX9.Texture Filter)" componentmode="Hidden" id="68">
    <BOUNDS type="Node" left="540" top="5760" width="100" height="100">
    </BOUNDS>
@@ -76,8 +64,6 @@
    <PIN pinname="Input" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="70" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="68" dstpinname="Control">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
@@ -172,32 +158,18 @@
    </LINK>
    <LINK srcnodeid="77" srcpinname="Output" dstnodeid="68" dstpinname="Input">
    </LINK>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="79">
-   <BOUNDS type="Node" left="855" top="2205" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="855" top="2205">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="78">
    <BOUNDS type="Node" left="855" top="2715" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="2715" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="9120" top="2340" width="4800" height="4500">
+   <BOUNDS type="Window" left="9120" top="2340" width="5160" height="5295">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="First">
    </PIN>
    </NODE>
-   <LINK srcnodeid="79" srcpinname="Layer" dstnodeid="78" dstpinname="Layers">
-   </LINK>
-   <LINK srcnodeid="77" srcpinname="Output" dstnodeid="79" dstpinname="Texture">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="80">
    <BOUNDS type="Node" left="2445" top="2745" width="2130" height="270">
    </BOUNDS>
@@ -296,4 +268,68 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="79">
+   <BOUNDS type="Node" left="855" top="2205" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="855" top="2205">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="79" srcpinname="Layer" dstnodeid="78" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="77" srcpinname="Output" dstnodeid="79" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="70">
+   <BOUNDS type="Node" left="540" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="540" top="6840">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Layer" dstnodeid="69" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="70" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Convolution (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Convolution\Convolution (EX9.Texture Filter).v4p" nodename="Convolution (EX9.Texture Filter)" componentmode="Hidden" id="87">
+   <BOUNDS type="Node" left="2085" top="10155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2085" top="10155">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="88">
+   <BOUNDS type="Node" left="525" top="9660" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="525" top="9660" width="1485" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|See also|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="Grain (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Grain\Grain (EX9.Texture Filter).v4p" nodename="Grain (EX9.Texture Filter)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="585" top="10155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="10155">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="RemoveGrain (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\RemoveGrain\RemoveGrain (EX9.Texture Filter).v4p" nodename="RemoveGrain (EX9.Texture Filter)" componentmode="Hidden" id="90">
+   <BOUNDS type="Node" left="3375" top="10155" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3375" top="10155">
+   </BOUNDS>
+   </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

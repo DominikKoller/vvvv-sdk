@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter) help.v4p" systemname="LensBlur (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="6045" top="1395" width="6465" height="9495">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter) help.v4p" systemname="LensBlur (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="4050" top="1080" width="6465" height="9495">
    </BOUNDS>
    <NODE componentmode="InABox" id="15" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="315" top="705" type="Node" width="570">
@@ -40,28 +40,16 @@
    <BOUNDS type="Box" left="510" top="1275">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="89">
-   <BOUNDS type="Node" left="510" top="4170" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="510" top="4170">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="88">
    <BOUNDS type="Node" left="510" top="4680" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="510" top="4680" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
+   <BOUNDS type="Window" left="10425" top="1110" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="89" srcpinname="Layer" dstnodeid="88" dstpinname="Layers">
-   </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="LensBlur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter).v4p" nodename="LensBlur (EX9.Texture Filter)" componentmode="Hidden" id="87">
@@ -98,20 +86,20 @@
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="87" srcpinname="Output" dstnodeid="89" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="90" srcpinname="Output" dstnodeid="87" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="91">
-   <BOUNDS type="Box" left="1275" top="2265" width="795" height="240">
+   <BOUNDS type="Box" left="1155" top="2490" width="1230" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="1275" top="2265" width="0" height="0">
+   <BOUNDS type="Node" left="1155" top="2490" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.23">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="87" dstpinname="Width">
@@ -131,9 +119,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="97">
-   <BOUNDS type="Node" left="2130" top="2250" width="705" height="270">
+   <BOUNDS type="Node" left="2415" top="2475" width="705" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2130" top="2250" width="705" height="270">
+   <BOUNDS type="Box" left="2415" top="2475" width="1140" height="345">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Width|">
    </PIN>
@@ -142,6 +130,8 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="108" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -244,4 +234,20 @@
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
    </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="510" top="4170" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="510" top="4170">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Layer" dstnodeid="88" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Output" dstnodeid="89" dstpinname="Texture">
+   </LINK>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

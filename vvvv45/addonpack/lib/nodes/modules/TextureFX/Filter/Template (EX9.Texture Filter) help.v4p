@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x64\addonpack\lib\nodes\modules\TextureFX\Filter\Template (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="7575" top="1365" width="4995" height="6510">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Template (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="7575" top="1365" width="4995" height="6405">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -32,16 +32,6 @@
    <BOUNDS type="Box" left="450" top="1590">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="465" top="3105" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="465" top="3105">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
    <BOUNDS type="Node" left="465" top="3615" width="100" height="100">
    </BOUNDS>
@@ -49,11 +39,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Template (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Template (EX9.Texture Filter).v4p" nodename="Template (EX9.Texture Filter)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="465" top="2175" width="100" height="100">
    </BOUNDS>
@@ -84,14 +72,12 @@
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="4" dstpinname="Input">
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Template (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Template.fx" nodename="Template (EX9.Effect)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="390" top="4725" width="100" height="100">
+   <BOUNDS type="Node" left="1770" top="4770" width="100" height="100">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9">
@@ -137,5 +123,23 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Url">
    </PIN>
+   </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="465" top="3105" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="465" top="3105">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="ShaderFilter (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\.ShaderFilter\ShaderFilter (EX9.Texture Filter).v4p" nodename="ShaderFilter (EX9.Texture Filter)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="450" top="4755" width="100" height="100">
+   </BOUNDS>
    </NODE>
    </PATCH>

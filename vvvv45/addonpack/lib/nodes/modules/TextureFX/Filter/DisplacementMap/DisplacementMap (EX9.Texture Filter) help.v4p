@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Background Color" slicecount="1" values="|0.49861,0.49861,0.49861,1.00000|" visible="1">
+   <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.49861,0.49861,0.49861,1.00000|">
    </PIN>
    <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
@@ -192,7 +192,7 @@
    </NODE>
    <LINK srcnodeid="97" srcpinname="Output" dstnodeid="93" dstpinname="Color">
    </LINK>
-   <INFO author="" description="" tags="">
+   <INFO author="dominikkoller" description="" tags="">
    </INFO>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="108">
    <BOUNDS type="Box" left="3375" top="3390" width="900" height="375">
@@ -229,7 +229,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.94">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.39">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0.5">
    </PIN>
@@ -245,9 +245,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="117">
-   <BOUNDS type="Node" left="4260" top="2850" width="1770" height="270">
+   <BOUNDS type="Node" left="4305" top="2850" width="1770" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4260" top="2850" width="2400" height="345">
+   <BOUNDS type="Box" left="4305" top="2850" width="2400" height="345">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Red (X Displacement)|">
    </PIN>
@@ -261,9 +261,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="118">
-   <BOUNDS type="Node" left="4260" top="3390" width="1935" height="270">
+   <BOUNDS type="Node" left="4305" top="3390" width="1935" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4260" top="3390" width="2565" height="345">
+   <BOUNDS type="Box" left="4305" top="3390" width="2565" height="345">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Green (Y Displacement)|">
    </PIN>

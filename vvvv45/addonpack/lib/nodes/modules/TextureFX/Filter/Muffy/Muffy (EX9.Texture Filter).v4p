@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" filename="C:\Users\clone\Desktop\CrossHatching\CrossHatching(EX9.Texture Filter).v4p" systemname="CrossHatching (EX9.Texture Filter)">
    <BOUNDS height="7155" left="5235" top="5385" type="Window" width="7620">
    </BOUNDS>
    <NODE componentmode="Hidden" id="5" nodename="Grid (EX9.Geometry)" systemname="Grid (EX9.Geometry)">
@@ -207,6 +207,8 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE componentmode="Hidden" filename="Muffy.fx" id="72" nodename="Muffy (EX9.Effect)" systemname="Muffy (EX9.Effect)">
    <BOUNDS height="270" left="480" top="2280" type="Node" width="6105">
@@ -241,7 +243,7 @@
    </PIN>
    <PIN pinname="Compiled" visible="1">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="threshold" visible="1">
    </PIN>
@@ -274,8 +276,6 @@
    </LINK>
    <LINK dstnodeid="54" dstpinname="Input 1" srcnodeid="72" srcpinname="Compiled">
    </LINK>
-   <LINK dstnodeid="72" dstpinname="Enabled" srcnodeid="47" srcpinname="Y Output Value">
-   </LINK>
    <LINK dstnodeid="72" dstpinname="threshold" srcnodeid="56" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="72" dstpinname="Thickness" srcnodeid="75" srcpinname="Y Output Value">
@@ -291,8 +291,6 @@
    <LINK dstnodeid="72" dstpinname="RingSize" srcnodeid="56" srcpinname="Y Output Value">
    </LINK>
    <LINK dstnodeid="72" dstpinname="RingNum" srcnodeid="75" srcpinname="Y Output Value">
-   </LINK>
-   <LINK dstnodeid="72" dstpinname="RingAmount" srcnodeid="75" srcpinname="Y Output Value">
    </LINK>
    <NODE componentmode="Hidden" id="77" nodename="Vector (2d Split)" systemname="Vector (2d Split)">
    <BOUNDS height="0" left="3780" top="2925" type="Node" width="0">
@@ -332,4 +330,54 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="4695" top="855" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Error Handling Style" slicecount="1" values="Ignore">
+   </PIN>
+   <PIN pinname="Success" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="75" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="4665" top="1320" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="81">
+   <BOUNDS type="Box" left="5415" top="885" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5415" top="885" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="999999">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="80" srcpinname="Output" dstnodeid="72" dstpinname="RingAmount">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Success" dstnodeid="80" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Y Output Value" dstnodeid="80" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="80" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="72" dstpinname="Enabled">
+   </LINK>
    </PATCH>

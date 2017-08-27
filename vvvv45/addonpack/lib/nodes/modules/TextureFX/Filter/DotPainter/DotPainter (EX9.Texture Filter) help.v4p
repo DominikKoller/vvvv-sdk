@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\DotPainter\DotPainter (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="5205" top="1230" width="7065" height="7815">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\DotPainter\DotPainter (EX9.Texture Filter) help.v4p" scrollx="15" scrolly="0">
+   <BOUNDS type="Window" left="4275" top="825" width="6840" height="10665">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -31,57 +31,53 @@
    </PIN>
    <BOUNDS type="Box" left="450" top="1425">
    </BOUNDS>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="6">
-   <BOUNDS type="Node" left="450" top="6480" width="100" height="100">
+   <BOUNDS type="Node" left="450" top="8280" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="450" top="6480" width="2400" height="1800">
+   <BOUNDS type="Box" left="450" top="8280" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="12120" top="1215" width="6825" height="5670">
+   <BOUNDS type="Window" left="11040" top="6195" width="8820" height="6285">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Result">
+   </PIN>
    </NODE>
    <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="450" top="5970" width="100" height="100">
+   <BOUNDS type="Node" left="450" top="7770" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="450" top="5970">
+   <BOUNDS type="Box" left="450" top="7770">
    </BOUNDS>
    <BOUNDS type="Window" left="8295" top="690" width="12255" height="4335">
    </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="6" dstpinname="Layers">
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="1575" top="2130" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="2130" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0002">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
-   <BOUNDS type="Box" left="1575" top="2610" width="795" height="240">
+   <BOUNDS type="Box" left="1575" top="4410" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="2610" width="0" height="0">
+   <BOUNDS type="Node" left="1575" top="4410" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.06">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0.2">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27">
-   <BOUNDS type="Node" left="2475" top="2130" width="1275" height="270">
+   <BOUNDS type="Node" left="2475" top="3930" width="1275" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="2130" width="3240" height="285">
+   <BOUNDS type="Box" left="2475" top="3930" width="3240" height="285">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Size Minimum. Relative to texture width,|">
    </PIN>
@@ -93,9 +89,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="28">
-   <BOUNDS type="Node" left="2475" top="2610" width="1305" height="270">
+   <BOUNDS type="Node" left="2475" top="4410" width="1305" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="2610" width="2130" height="420">
+   <BOUNDS type="Box" left="2475" top="4410" width="2130" height="420">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Size Maximum|">
    </PIN>
@@ -107,11 +103,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="1575" top="3030" width="795" height="240">
+   <BOUNDS type="Box" left="1575" top="4830" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="3030" width="0" height="0">
+   <BOUNDS type="Node" left="1575" top="4830" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.33">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3.34">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -119,9 +115,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="30">
-   <BOUNDS type="Node" left="2475" top="3030" width="4080" height="480">
+   <BOUNDS type="Node" left="2475" top="4830" width="4080" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="3030" width="4080" height="480">
+   <BOUNDS type="Box" left="2475" top="4830" width="4080" height="480">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Small Dots&cr;&lf;The higher this number, the more small dots there are.|">
    </PIN>
@@ -132,32 +128,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="DotPainter (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DotPainter\DotPainter (EX9.Texture Filter).v4p" nodename="DotPainter (EX9.Texture Filter)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="435" top="5070" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="435" top="5070">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2250" top="2370" width="14085" height="12315">
-   </BOUNDS>
-   <PIN pinname="Amount (^2)" visible="1" slicecount="1" values="169">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="4" dstpinname="Texture">
-   </LINK>
-   <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Size Minimum">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Size Maximum">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Small Dots">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
-   <BOUNDS type="Box" left="1575" top="3855" width="795" height="240">
+   <BOUNDS type="Box" left="1575" top="5655" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1575" top="3855" width="0" height="0">
+   <BOUNDS type="Node" left="1575" top="5655" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="96">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="70">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -166,12 +142,10 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Amount (^2)">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="36">
-   <BOUNDS type="Node" left="2475" top="3855" width="2115" height="480">
+   <BOUNDS type="Node" left="2475" top="5655" width="2115" height="480">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="3855" width="2730" height="510">
+   <BOUNDS type="Box" left="2475" top="5655" width="2730" height="510">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Amount&cr;&lf;The Amount of dots will be squared|">
    </PIN>
@@ -182,6 +156,116 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="33" dstpinname="Input">
+   <NODE systemname="DotPainter (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\DotPainter\DotPainter (EX9.Texture Filter).v4p" nodename="DotPainter (EX9.Texture Filter)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="435" top="6870" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="435" top="6870">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2250" top="2370" width="14085" height="12315">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Size Maximum">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Small Dots">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Amount (^2)">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="42" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="4" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Dots (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Dots\Dots (EX9.Texture Filter).v4p" nodename="Dots (EX9.Texture Filter)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="435" top="9405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="435" top="9405">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HatchDot (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchDot\HatchDot (EX9.Texture Filter).v4p" nodename="HatchDot (EX9.Texture Filter)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="1590" top="9405" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1590" top="9405">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="45">
+   <BOUNDS type="Node" left="435" top="8880" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="435" top="8880" width="1425" height="465">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|see also|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="48">
+   <BOUNDS type="Node" left="660" top="2370" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="660" top="2370" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11010" top="855" width="6600" height="5355">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="660" top="1935" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Layer" dstnodeid="48" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="2295" top="2370" width="1215" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2295" top="2370" width="1215" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; First Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="47" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="49">
+   <BOUNDS type="Node" left="2010" top="8280" width="1380" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2010" top="8280" width="1380" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Second Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
+   <BOUNDS type="Box" left="1575" top="3930" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1575" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Size Minimum">
    </LINK>
    </PATCH>

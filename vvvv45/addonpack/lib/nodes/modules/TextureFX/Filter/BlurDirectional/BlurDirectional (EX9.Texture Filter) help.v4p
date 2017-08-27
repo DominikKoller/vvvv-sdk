@@ -137,7 +137,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="5">
+   <PIN pinname="Index" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="BlurFlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurFlow\BlurFlow (EX9.Texture Filter).v4p" nodename="BlurFlow (EX9.Texture Filter)" componentmode="Hidden" id="108">
@@ -259,9 +259,9 @@
    <LINK srcnodeid="128" srcpinname="Layer" dstnodeid="127" dstpinname="Layer 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="129">
-   <BOUNDS type="Node" left="5025" top="1545" width="1695" height="270">
+   <BOUNDS type="Node" left="3465" top="1425" width="1695" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5025" top="1545" width="1695" height="270">
+   <BOUNDS type="Box" left="3465" top="1425" width="3300" height="450">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Move your mouse! &gt;&gt;|">
    </PIN>
@@ -271,5 +271,9 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
    </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

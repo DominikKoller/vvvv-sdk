@@ -1,6 +1,6 @@
 float2 R;
-float Direction <float uimin=-1.0;float uimax=1.0;> = 0.25;
-float Shift <float uimin=0.0;float uimax=1.0;> = 0.1;
+float Direction <float uimin=0.0;float uimax=1.0;> = 0.25;
+float Shift <float uimin=-1.0;float uimax=1.0;> = 0.1;
 float Hue <float uimin=0.0;float uimax=1.0;> = 0.1;
 float4 BorderCol:COLOR ={0.0,0.0,0.0,1.0};
 texture tex0,tex1;
@@ -12,9 +12,9 @@ float4 ts(sampler s,float2 x,float2 off){float2 dir=sin((Direction+float2(0,.25)
 float4 p0(float2 x:TEXCOORD0):color{
     float4 c=tex2D(s0,x);float pa=c.a;
     float sh=Shift*tex2D(s1,x).x;
-    c.r=ts(s0,x,sh*.1).r;
+    c.r=ts(s0,x,sh*.5).r;
     c.g=ts(s0,x,sh*.0).g;
-    c.b=ts(s0,x,sh*-.1).b;
+    c.b=ts(s0,x,sh*-.5).b;
     c.rgb=HSVtoRGB(-float3(Hue,0,0)+RGBtoHSV(c.xyz));
     //if(Alpha)c=float4(c.rgb*c.a,pa);
 

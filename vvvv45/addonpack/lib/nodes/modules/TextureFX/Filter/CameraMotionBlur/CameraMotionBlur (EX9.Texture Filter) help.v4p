@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter) help.v4p" systemname="CameraMotionBlur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-90">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter) help.v4p" systemname="CameraMotionBlur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="1950" top="540" width="10755" height="14835">
    </BOUNDS>
    <NODE componentmode="InABox" id="22" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -34,7 +34,7 @@
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
-   <INFO author="" description="" tags="">
+   <INFO author="dominikkoller" description="" tags="">
    </INFO>
    <NODE componentmode="InABox" id="56" nodename="IOBox (String)" systemname="IOBox (String)">
    <PIN pinname="Show Grid" slicecount="1" values="0">
@@ -377,7 +377,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3975" top="8310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -387,7 +387,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -701,9 +701,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="158">
-   <BOUNDS type="Node" left="5355" top="7080" width="240" height="270">
+   <BOUNDS type="Node" left="5355" top="7125" width="240" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5355" top="7080" width="300" height="435">
+   <BOUNDS type="Box" left="5355" top="7125" width="300" height="435">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="1">
    </PIN>
@@ -717,9 +717,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="159">
-   <BOUNDS type="Node" left="5775" top="7080" width="6105" height="270">
+   <BOUNDS type="Node" left="5775" top="7125" width="6105" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5775" top="7080" width="4230" height="540">
+   <BOUNDS type="Box" left="5775" top="7125" width="4230" height="540">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Draws the scene, without any MotionBlur. In the scene, we see some spheres that are not moving (the camera is)|">
    </PIN>
@@ -731,9 +731,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="160">
-   <BOUNDS type="Node" left="5355" top="7950" width="240" height="270">
+   <BOUNDS type="Node" left="5355" top="7995" width="240" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5355" top="7950" width="300" height="435">
+   <BOUNDS type="Box" left="5355" top="7995" width="300" height="435">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="2">
    </PIN>
@@ -747,9 +747,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="161">
-   <BOUNDS type="Node" left="5775" top="7950" width="11190" height="270">
+   <BOUNDS type="Node" left="5775" top="7995" width="11190" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5775" top="7950" width="4770" height="705">
+   <BOUNDS type="Box" left="5775" top="7995" width="4770" height="705">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|This is the Camera through which we see the scene. It is rotating. If you set its Enabled pin to true, you can move the camera yourself by dragging the mouse in the renderer.|">
    </PIN>

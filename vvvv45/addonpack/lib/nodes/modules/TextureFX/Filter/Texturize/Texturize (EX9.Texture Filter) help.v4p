@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Texturize\Texturize (EX9.Texture Filter) help.v4p" scrollx="15" scrolly="45">
-   <BOUNDS type="Window" left="6135" top="1395" width="6405" height="9135">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Texturize\Texturize (EX9.Texture Filter) help.v4p" scrollx="15" scrolly="45">
+   <BOUNDS type="Window" left="6135" top="1395" width="6405" height="9930">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -53,6 +53,8 @@
    </PIN>
    <BOUNDS type="Box" left="570" top="1500">
    </BOUNDS>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="10">
    <BOUNDS type="Node" left="570" top="7905" width="100" height="100">
@@ -426,4 +428,26 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Mosaic (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Mosaic\Mosaic (EX9.Texture Filter).v4p" nodename="Mosaic (EX9.Texture Filter)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="525" top="8895" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="46">
+   <BOUNDS type="Node" left="510" top="8415" width="720" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="510" top="8415" width="1455" height="435">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Also see|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

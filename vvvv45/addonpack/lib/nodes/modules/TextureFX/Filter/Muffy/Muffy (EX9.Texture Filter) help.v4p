@@ -1,11 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="4365" top="5055" width="7155" height="7080">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="7710" top="1395" width="4845" height="7695">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="615" top="165" width="5100" height="450">
+   <BOUNDS type="Node" left="330" top="210" width="5100" height="450">
    </BOUNDS>
-   <BOUNDS type="Box" left="615" top="165" width="5100" height="450">
+   <BOUNDS type="Box" left="330" top="210" width="5100" height="450">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="0" values="|Muffy (EX9.Texture Filter)|">
    </PIN>
@@ -15,11 +15,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="615" top="540" width="5100" height="600">
+   <BOUNDS type="Node" left="330" top="630" width="5100" height="600">
    </BOUNDS>
-   <BOUNDS type="Box" left="615" top="540" width="1185" height="375">
+   <BOUNDS type="Box" left="330" top="630" width="3930" height="330">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|Muffy effect|">
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Muffy effect. Distortion in the shape of a muffin tray.|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -34,16 +34,6 @@
    <BOUNDS type="Box" left="615" top="1230">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="615" top="4905" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="615" top="4905">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="20">
    <BOUNDS type="Node" left="615" top="5415" width="100" height="100">
    </BOUNDS>
@@ -51,11 +41,9 @@
    </BOUNDS>
    <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="20" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Muffy (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Muffy\Muffy (EX9.Texture Filter).v4p" nodename="Muffy (EX9.Texture Filter)" componentmode="Hidden" id="23">
    <BOUNDS type="Node" left="615" top="3825" width="100" height="100">
    </BOUNDS>
@@ -70,32 +58,32 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Control">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
-   <BOUNDS type="Box" left="1875" top="2370" width="795" height="240">
+   <BOUNDS type="Box" left="1485" top="2400" width="1170" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="1875" top="2370" width="0" height="0">
+   <BOUNDS type="Node" left="1485" top="2400" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15.22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Ring Size">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="1845" top="2865" width="795" height="240">
+   <BOUNDS type="Box" left="1485" top="2895" width="1170" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="1845" top="2865" width="0" height="0">
+   <BOUNDS type="Node" left="1485" top="2895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="7.67">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.52">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -103,13 +91,15 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="5">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Amount">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26">
-   <BOUNDS type="Node" left="2790" top="2370" width="930" height="270">
+   <BOUNDS type="Node" left="2670" top="2400" width="930" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2790" top="2370" width="930" height="270">
+   <BOUNDS type="Box" left="2670" top="2400" width="1515" height="420">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Ring Size|">
    </PIN>
@@ -119,11 +109,13 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27">
-   <BOUNDS type="Node" left="2790" top="2865" width="855" height="270">
+   <BOUNDS type="Node" left="2670" top="2895" width="855" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2790" top="2865" width="855" height="270">
+   <BOUNDS type="Box" left="2670" top="2895" width="1440" height="420">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Amount|">
    </PIN>
@@ -132,6 +124,42 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="615" top="4905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="615" top="4905">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Layer" dstnodeid="20" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Distort (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Distort\Distort (EX9.Texture Filter).v4p" nodename="Distort (EX9.Texture Filter)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="615" top="6450" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="29">
+   <BOUNDS type="Node" left="615" top="5985" width="720" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="615" top="5985" width="1425" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Also see|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
    </PATCH>

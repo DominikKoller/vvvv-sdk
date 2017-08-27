@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="8550" top="4575" width="4530" height="7710">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8550" top="4575" width="4530" height="8925">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -31,16 +31,8 @@
    </PIN>
    <BOUNDS type="Box" left="360" top="1290">
    </BOUNDS>
-   </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="360" top="6015" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   <PIN pinname="Index" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="360" top="6015">
-   </BOUNDS>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="5">
    <BOUNDS type="Node" left="360" top="6525" width="100" height="100">
@@ -49,13 +41,11 @@
    </BOUNDS>
    <BOUNDS type="Window" left="13080" top="4575" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Invert (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Invert\Invert (EX9.Texture Filter).v4p" nodename="Invert (EX9.Texture Filter)" componentmode="Hidden" id="4">
    <BOUNDS type="Node" left="360" top="4935" width="100" height="100">
    </BOUNDS>
@@ -87,8 +77,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="4" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="4" dstpinname="Control">
    </LINK>
@@ -228,4 +216,48 @@
    </NODE>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="360" top="6015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="360" top="6015">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="360" top="7020" width="705" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="360" top="7020" width="1440" height="420">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|See also|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE systemname="HSCB (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HSCB\HSCB (EX9.Texture Filter).v4p" nodename="HSCB (EX9.Texture Filter)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="270" top="7635" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Levels (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Levels\Levels (EX9.Texture Filter).v4p" nodename="Levels (EX9.Texture Filter)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="1335" top="7635" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="ColorWaveShaper (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\ColorWaveShaper\ColorWaveShaper (EX9.Texture Filter).v4p" nodename="ColorWaveShaper (EX9.Texture Filter)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="2715" top="7635" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial\BlurRadial (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="15">
-   <BOUNDS type="Window" left="5865" top="1380" width="6690" height="9855">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial\BlurRadial (EX9.Texture Filter) help.v4p" scrollx="15" scrolly="15">
+   <BOUNDS type="Window" left="5865" top="1380" width="6690" height="11415">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
@@ -33,19 +33,21 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="6">
-   <BOUNDS type="Node" left="465" top="5580" width="100" height="100">
+   <BOUNDS type="Node" left="465" top="7080" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="465" top="5580" width="2400" height="1800">
+   <BOUNDS type="Box" left="465" top="7080" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="12450" top="1395" width="6720" height="5970">
+   <BOUNDS type="Window" left="12450" top="6855" width="6720" height="5970">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Result">
+   </PIN>
    </NODE>
    <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="465" top="5070" width="100" height="100">
+   <BOUNDS type="Node" left="465" top="6570" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="465" top="5070">
+   <BOUNDS type="Box" left="465" top="6570">
    </BOUNDS>
    <BOUNDS type="Window" left="8295" top="690" width="12255" height="4335">
    </BOUNDS>
@@ -57,11 +59,11 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
-   <BOUNDS type="Box" left="1380" top="2115" width="795" height="480">
+   <BOUNDS type="Box" left="1380" top="3315" width="1185" height="690">
    </BOUNDS>
-   <BOUNDS type="Node" left="1380" top="2115" width="0" height="0">
+   <BOUNDS type="Node" left="1380" top="3315" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.03,-0.1">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0.27,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -73,23 +75,15 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="2" values="0,0">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
-   <BOUNDS type="Box" left="1395" top="2805" width="795" height="240">
+   <BOUNDS type="Box" left="1395" top="4155" width="1185" height="450">
    </BOUNDS>
-   <BOUNDS type="Node" left="1395" top="2805" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.07">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
-   <BOUNDS type="Box" left="1395" top="3270" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1395" top="3270" width="0" height="0">
+   <BOUNDS type="Node" left="1395" top="4155" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.03">
    </PIN>
@@ -97,11 +91,27 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="1395" top="4770" width="1185" height="450">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1395" top="4770" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE systemname="Blur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="405" top="6840" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="8340" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="405" top="6840">
+   <BOUNDS type="Box" left="405" top="8340">
    </BOUNDS>
    </NODE>
    <NODE componentmode="InABox" id="30" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -113,29 +123,29 @@
    </PIN>
    <BOUNDS height="160" left="0" top="0" type="Window" width="215">
    </BOUNDS>
-   <BOUNDS height="435" left="405" top="6315" type="Box" width="1695">
+   <BOUNDS height="435" left="405" top="7815" type="Box" width="1695">
    </BOUNDS>
-   <BOUNDS height="255" left="405" top="6315" type="Node" width="825">
+   <BOUNDS height="255" left="405" top="7815" type="Node" width="825">
    </BOUNDS>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
    </NODE>
    <NODE systemname="BlurDirectional (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurDirectional\BlurDirectional (EX9.Texture Filter).v4p" nodename="BlurDirectional (EX9.Texture Filter)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="1500" top="6840" width="100" height="100">
+   <BOUNDS type="Node" left="1500" top="8340" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="6840">
+   <BOUNDS type="Box" left="1500" top="8340">
    </BOUNDS>
    </NODE>
    <NODE systemname="LensBlur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\LensBlur\LensBlur (EX9.Texture Filter).v4p" nodename="LensBlur (EX9.Texture Filter)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="2940" top="6840" width="100" height="100">
+   <BOUNDS type="Node" left="2940" top="8340" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2940" top="6840">
+   <BOUNDS type="Box" left="2940" top="8340">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="26">
-   <BOUNDS type="Node" left="465" top="8475" width="2685" height="270">
+   <BOUNDS type="Node" left="465" top="9975" width="2685" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="465" top="8475" width="3810" height="315">
+   <BOUNDS type="Box" left="465" top="9975" width="3810" height="315">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|How to use the Control Texture Pin:|">
    </PIN>
@@ -149,9 +159,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="25">
-   <BOUNDS type="Node" left="480" top="8790" width="315" height="270">
+   <BOUNDS type="Node" left="480" top="10290" width="315" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="480" top="8790" width="6015" height="285">
+   <BOUNDS type="Box" left="480" top="10290" width="6015" height="285">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|..\..\..\..\..\..\girlpower\Graphics\DX9\Texture\Control Texture Help (DX9).v4p|">
    </PIN>
@@ -163,50 +173,50 @@
    </PIN>
    </NODE>
    <NODE systemname="BlurFlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurFlow\BlurFlow (EX9.Texture Filter).v4p" nodename="BlurFlow (EX9.Texture Filter)" componentmode="Hidden" id="24">
-   <BOUNDS type="Node" left="4245" top="6840" width="100" height="100">
+   <BOUNDS type="Node" left="4245" top="8340" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4245" top="6840">
+   <BOUNDS type="Box" left="4245" top="8340">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurGlow (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurGlow\BlurGlow (EX9.Texture Filter).v4p" nodename="BlurGlow (EX9.Texture Filter)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="405" top="7305" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="8805" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="405" top="7305">
+   <BOUNDS type="Box" left="405" top="8805">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurWarp (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurWarp\BlurWarp (EX9.Texture Filter).v4p" nodename="BlurWarp (EX9.Texture Filter)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="1485" top="7305" width="100" height="100">
+   <BOUNDS type="Node" left="1485" top="8805" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="1485" top="7305">
+   <BOUNDS type="Box" left="1485" top="8805">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurPerfector (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurPerfector\BlurPerfector (EX9.Texture Filter).v4p" nodename="BlurPerfector (EX9.Texture Filter)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="2940" top="7305" width="100" height="100">
+   <BOUNDS type="Node" left="2940" top="8805" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2940" top="7305">
+   <BOUNDS type="Box" left="2940" top="8805">
    </BOUNDS>
    </NODE>
    <NODE systemname="CameraMotionBlur (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\CameraMotionBlur\CameraMotionBlur (EX9.Texture Filter).v4p" nodename="CameraMotionBlur (EX9.Texture Filter)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="4245" top="7305" width="100" height="100">
+   <BOUNDS type="Node" left="4245" top="8805" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="4245" top="7305">
+   <BOUNDS type="Box" left="4245" top="8805">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurRadial3D (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial3D\BlurRadial3D (EX9.Texture Filter).v4p" nodename="BlurRadial3D (EX9.Texture Filter)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="405" top="7785" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="9285" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="405" top="7785">
+   <BOUNDS type="Box" left="405" top="9285">
    </BOUNDS>
    </NODE>
    <NODE systemname="BlurRadial (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\BlurRadial\BlurRadial (EX9.Texture Filter).v4p" nodename="BlurRadial (EX9.Texture Filter)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="450" top="4020" width="100" height="100">
+   <BOUNDS type="Node" left="450" top="5520" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="CenterXY" visible="1" slicecount="2" values="0,0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="32" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="32" dstpinname="CenterXY">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Zoom">
    </LINK>
@@ -215,9 +225,9 @@
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="4" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="33">
-   <BOUNDS type="Node" left="2280" top="2115" width="765" height="270">
+   <BOUNDS type="Node" left="2580" top="3315" width="765" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2280" top="2115" width="765" height="270">
+   <BOUNDS type="Box" left="2580" top="3315" width="1260" height="450">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Center|">
    </PIN>
@@ -227,11 +237,13 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="34">
-   <BOUNDS type="Node" left="2280" top="2805" width="690" height="270">
+   <BOUNDS type="Node" left="2580" top="4155" width="690" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2280" top="2805" width="690" height="270">
+   <BOUNDS type="Box" left="2580" top="4155" width="1185" height="450">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Zoom|">
    </PIN>
@@ -241,11 +253,13 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="35">
-   <BOUNDS type="Node" left="2280" top="3270" width="750" height="270">
+   <BOUNDS type="Node" left="2580" top="4770" width="750" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="2280" top="3270" width="750" height="270">
+   <BOUNDS type="Box" left="2580" top="4770" width="1245" height="450">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Rotate|">
    </PIN>
@@ -254,6 +268,90 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="38">
+   <BOUNDS type="Node" left="720" top="2175" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="720" top="2175" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12420" top="1395" width="6300" height="5490">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="720" top="1740" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="38" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="2355" top="2175" width="1215" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2355" top="2175" width="1215" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; First Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="37" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39">
+   <BOUNDS type="Node" left="2040" top="7080" width="1380" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2040" top="7080" width="1380" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Second Window|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="32" dstpinname="CenterXY">
+   </LINK>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="1215" top="2850" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1215" top="2850" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="PositionXY" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="41">
+   <BOUNDS type="Node" left="4875" top="5835" width="2160" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4875" top="5835" width="1575" height="765">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Move your mouse! &gt;&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    </PATCH>

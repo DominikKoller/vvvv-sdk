@@ -1,11 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Growth\Growth (EX9.Texture Filter) help.v4p" systemname="Growth (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Growth\Growth (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="5805" top="2550" width="6855" height="14130">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Growth\Growth (EX9.Texture Filter) help.v4p" systemname="Growth (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Growth\Growth (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="4800" top="720" width="6855" height="14130">
    </BOUNDS>
    <NODE componentmode="InABox" id="101" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="255" left="615" top="915" type="Node" width="570">
+   <BOUNDS height="255" left="615" top="765" type="Node" width="570">
    </BOUNDS>
-   <BOUNDS height="615" left="615" top="915" type="Box" width="5160">
+   <BOUNDS height="615" left="615" top="765" type="Box" width="5160">
    </BOUNDS>
    <BOUNDS height="160" left="10290" top="35940" type="Window" width="215">
    </BOUNDS>
@@ -19,9 +19,9 @@
    </PIN>
    </NODE>
    <NODE componentmode="InABox" id="100" nodename="IOBox (String)" systemname="IOBox (String)">
-   <BOUNDS height="270" left="615" top="540" type="Node" width="915">
+   <BOUNDS height="270" left="615" top="390" type="Node" width="915">
    </BOUNDS>
-   <BOUNDS height="375" left="615" top="540" type="Box" width="3765">
+   <BOUNDS height="375" left="615" top="390" type="Box" width="3765">
    </BOUNDS>
    <BOUNDS height="160" left="10290" top="35940" type="Window" width="215">
    </BOUNDS>
@@ -42,30 +42,18 @@
    <BOUNDS type="Box" left="615" top="5565">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Background (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Background (DX9).v4p" nodename="Background (DX9)" componentmode="Hidden" id="113">
-   <BOUNDS type="Node" left="615" top="11040" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <BOUNDS type="Box" left="615" top="11040">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="112">
    <BOUNDS type="Node" left="615" top="11550" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="615" top="11550" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="12510" top="7620" width="6720" height="5970">
+   <BOUNDS type="Window" left="11535" top="5730" width="6720" height="5970">
    </BOUNDS>
-   <PIN pinname="Layers" visible="1">
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Second">
    </PIN>
    </NODE>
-   <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="112" dstpinname="Layers">
-   </LINK>
    <NODE systemname="Growth (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Growth\Growth (EX9.Texture Filter).v4p" nodename="Growth (EX9.Texture Filter)" componentmode="Hidden" id="111">
    <BOUNDS type="Node" left="615" top="9960" width="100" height="100">
    </BOUNDS>
@@ -104,14 +92,12 @@
    </NODE>
    <LINK srcnodeid="114" srcpinname="Output" dstnodeid="111" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="111" srcpinname="Output" dstnodeid="113" dstpinname="Texture">
-   </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="115">
    <BOUNDS type="Node" left="510" top="3975" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="510" top="3975" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="12510" top="2565" width="6240" height="5085">
+   <BOUNDS type="Window" left="11535" top="705" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
@@ -151,7 +137,7 @@
    </PIN>
    <PIN pinname="Random Seed" slicecount="1" visible="1" values="77">
    </PIN>
-   <PIN pinname="Spread Count" slicecount="1" visible="1" values="1">
+   <PIN pinname="Spread Count" slicecount="1" visible="1" values="2">
    </PIN>
    <PIN pinname="SizeXY" slicecount="2" values="1.97,1.97">
    </PIN>
@@ -211,7 +197,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3180" top="2865" width="1245" height="270">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Animated Ball|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Animated Balls|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -460,4 +446,20 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="615" top="11040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="615" top="11040">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Layer" dstnodeid="112" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="111" srcpinname="Output" dstnodeid="113" dstpinname="Texture">
+   </LINK>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

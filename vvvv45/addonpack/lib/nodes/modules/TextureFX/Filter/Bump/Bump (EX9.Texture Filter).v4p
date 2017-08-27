@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\GIT\vvvvAcademySummerCourse\Sessions\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Bump\Bump (EX9.Texture Filter).v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Bump\Bump (EX9.Texture Filter).v4p" scrollx="0" scrolly="-360">
    <BOUNDS height="9225" left="3765" top="1530" type="Window" width="24195">
    </BOUNDS>
    <NODE componentmode="InABox" id="15" nodename="IOBox (Node)" systemname="IOBox (Node)">
@@ -213,7 +213,7 @@
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" values="||">
    </PIN>
-   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Control">
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="|Bump Map|">
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>

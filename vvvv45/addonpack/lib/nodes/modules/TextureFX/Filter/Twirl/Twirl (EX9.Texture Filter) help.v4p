@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter) help.v4p" systemname="Twirl (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter) help.v4p" systemname="Twirl (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Twirl\Twirl (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="3045" top="3210" width="8310" height="8445">
    </BOUNDS>
    <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
@@ -392,6 +392,36 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Mouse (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Mouse (Devices Window)" componentmode="Hidden" id="119">
+   <BOUNDS type="Node" left="1485" top="2010" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1485" top="2010" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="119" srcpinname="PositionXY" dstnodeid="89" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Pinch (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Pinch\Pinch (EX9.Texture Filter).v4p" nodename="Pinch (EX9.Texture Filter)" componentmode="Hidden" id="120">
+   <BOUNDS type="Node" left="1935" top="7245" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="121">
+   <BOUNDS type="Node" left="6495" top="510" width="2160" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6495" top="510" width="1575" height="765">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Move your mouse! &gt;&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
    </PIN>
    </NODE>
    </PATCH>

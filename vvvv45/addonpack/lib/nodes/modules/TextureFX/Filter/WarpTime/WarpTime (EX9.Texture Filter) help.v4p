@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\WarpTime\WarpTime (EX9.Texture Filter) help.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\WarpTime\WarpTime (EX9.Texture Filter) help.v4p">
    <BOUNDS type="Window" left="660" top="435" width="8925" height="11550">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
@@ -360,4 +360,6 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="6" dstpinname="Texture">
    </LINK>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

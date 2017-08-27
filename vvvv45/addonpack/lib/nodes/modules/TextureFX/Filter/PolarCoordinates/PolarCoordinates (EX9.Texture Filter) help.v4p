@@ -41,7 +41,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="5">
+   <PIN pinname="Index" slicecount="1" values="2">
    </PIN>
    </NODE>
    <NODE id="90" componentmode="Hidden" systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" stayontop="0" hiddenwhenlocked="0" managers="">
@@ -514,4 +514,6 @@
    <BOUNDS type="Node" left="3735" top="11655" width="100" height="100">
    </BOUNDS>
    </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

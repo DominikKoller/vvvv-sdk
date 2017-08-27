@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalGlow\NormalGlow (EX9.Texture Filter) help.v4p" systemname="NormalGlow (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalGlow\NormalGlow (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="6030" top="1395" width="6540" height="11400">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\NormalGlow\NormalGlow (EX9.Texture Filter) help.v4p" systemname="NormalGlow (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\NormalGlow\NormalGlow (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="6030" top="1395" width="6540" height="10845">
    </BOUNDS>
    <NODE componentmode="InABox" id="27" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="510" top="720" type="Node" width="570">
@@ -33,17 +33,21 @@
    </PIN>
    </NODE>
    <NODE systemname="NormalMap (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\NormalMap\NormalMap (EX9.Texture Filter).v4p" nodename="NormalMap (EX9.Texture Filter)" componentmode="Hidden" id="88">
-   <BOUNDS type="Node" left="570" top="9885" width="100" height="100">
+   <BOUNDS type="Node" left="420" top="9735" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="420" top="9735">
    </BOUNDS>
    </NODE>
    <NODE systemname="Metallica (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Metallica\Metallica (EX9.Texture Filter).v4p" nodename="Metallica (EX9.Texture Filter)" componentmode="Hidden" id="89">
-   <BOUNDS type="Node" left="555" top="10260" width="100" height="100">
+   <BOUNDS type="Node" left="1650" top="9735" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1650" top="9735">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="98">
-   <BOUNDS type="Node" left="510" top="9300" width="705" height="270">
+   <BOUNDS type="Node" left="360" top="9300" width="705" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="510" top="9300" width="1350" height="435">
+   <BOUNDS type="Box" left="360" top="9300" width="1350" height="435">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|see also|">
    </PIN>
@@ -267,7 +271,7 @@
    </BOUNDS>
    <PIN pinname="Include VVVV Assets" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="0">
+   <PIN pinname="Index" slicecount="1" values="3">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -334,4 +338,6 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

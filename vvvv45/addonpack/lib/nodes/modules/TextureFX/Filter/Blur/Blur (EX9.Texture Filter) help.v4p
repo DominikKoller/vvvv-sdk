@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" systemname="Blur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="4590" top="1065" width="6990" height="9000">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" systemname="Blur (EX9.Texture Filter) help" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Blur\Blur (EX9.Texture Filter) help.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="4590" top="1065" width="6990" height="9105">
    </BOUNDS>
    <NODE systemname="Blur (EX9.Texture Filter)" filename="Blur (EX9.Texture Filter).v4p" nodename="Blur (EX9.Texture Filter)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="555" top="3345" width="1035" height="270">
@@ -87,7 +87,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="555" top="4710" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="11505" top="1110" width="6240" height="5085">
+   <BOUNDS type="Window" left="11505" top="1110" width="8325" height="6315">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -105,7 +105,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1725" top="2415" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.22">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -167,7 +167,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Index" slicecount="1" values="5">
+   <PIN pinname="Index" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="107" srcpinname="Output" dstnodeid="26" dstpinname="Input">
@@ -220,4 +220,6 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Output" dstnodeid="90" dstpinname="Texture">
    </LINK>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
    </PATCH>

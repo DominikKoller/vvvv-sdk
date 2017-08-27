@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.9.dtd" >
-   <PATCH nodename="D:\GIT\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Dots\Dots (EX9.Texture Filter) help.v4p" systemname="Dots (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Dots\Dots (EX9.Texture Filter) help.v4p">
-   <BOUNDS type="Window" left="5190" top="1065" width="6375" height="8340">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\vvvv\vvvv_50beta35.8_x86\addonpack\lib\nodes\modules\TextureFX\Filter\Dots\Dots (EX9.Texture Filter) help.v4p" systemname="Dots (EX9.Texture Filter) help" filename="C:\Program Files (x86)\Git\vvvv-sdk\vvvv45\addonpack\lib\nodes\modules\TextureFX\Filter\Dots\Dots (EX9.Texture Filter) help.v4p">
+   <BOUNDS type="Window" left="5190" top="1065" width="6375" height="9360">
    </BOUNDS>
    <NODE componentmode="InABox" id="34" nodename="IOBox (String)" systemname="IOBox (String)">
    <BOUNDS height="255" left="390" top="570" type="Node" width="570">
@@ -43,9 +43,9 @@
    </PIN>
    <BOUNDS type="Window" height="160" left="0" top="0" width="215">
    </BOUNDS>
-   <BOUNDS type="Box" height="450" left="390" top="6615" width="1350">
+   <BOUNDS type="Box" height="450" left="390" top="7215" width="1350">
    </BOUNDS>
-   <BOUNDS type="Node" height="255" left="390" top="6615" width="825">
+   <BOUNDS type="Node" height="255" left="390" top="7215" width="825">
    </BOUNDS>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
@@ -73,6 +73,8 @@
    </PIN>
    <BOUNDS type="Window" left="2835" top="5085" width="13860" height="8550">
    </BOUNDS>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="3405" top="1875" width="0" height="0">
@@ -113,9 +115,9 @@
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Smooth">
    </LINK>
    <NODE systemname="Pixelize (EX9.Texture Filter)" filename="..\Pixelize\Pixelize (EX9.Texture Filter).v4p" nodename="Pixelize (EX9.Texture Filter)" componentmode="Hidden" id="54">
-   <BOUNDS type="Node" left="390" top="7170" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="7770" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="390" top="7170">
+   <BOUNDS type="Box" left="390" top="7770">
    </BOUNDS>
    </NODE>
    <NODE systemname="Assets (EX9.Texture Source)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Source\Assets\Assets (EX9.Texture Source).v4p" nodename="Assets (EX9.Texture Source)" componentmode="Hidden" id="64">
@@ -125,6 +127,8 @@
    </PIN>
    <BOUNDS type="Box" left="390" top="1260">
    </BOUNDS>
+   <PIN pinname="Index" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="67">
    <BOUNDS type="Node" left="4290" top="3225" width="840" height="270">
@@ -185,15 +189,23 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="72">
-   <BOUNDS type="Node" left="390" top="6090" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="6690" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="390" top="6090" width="2400" height="1800">
+   <BOUNDS type="Box" left="390" top="6690" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="11460" top="1050" width="6600" height="6195">
+   <BOUNDS type="Window" left="11475" top="4230" width="5715" height="6195">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Background Color" slicecount="1" visible="1" values="|0.57548,0.57548,0.57548,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Result">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="73">
@@ -215,7 +227,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="50">
+   <PIN pinname="Y Input Value" slicecount="1" values="49">
    </PIN>
    </NODE>
    <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="73" dstpinname="X">
@@ -257,29 +269,81 @@
    <LINK srcnodeid="64" srcpinname="Output" dstnodeid="58" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="83">
-   <BOUNDS type="Box" left="720" top="5535" width="660" height="465">
+   <BOUNDS type="Box" left="720" top="6135" width="660" height="465">
    </BOUNDS>
-   <BOUNDS type="Node" left="720" top="5535" width="0" height="0">
+   <BOUNDS type="Node" left="720" top="6135" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.47956,0.47956,0.47956,1.00000|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.40871,0.40871,0.40871,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="83" srcpinname="Color Output" dstnodeid="72" dstpinname="Background Color">
    </LINK>
    <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="390" top="5130" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="5730" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="390" top="5130">
+   <BOUNDS type="Box" left="390" top="5730">
    </BOUNDS>
    <BOUNDS type="Window" left="4680" top="7680" width="19260" height="6045">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="65" dstpinname="Texture">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Layer" dstnodeid="72" dstpinname="Layers">
    </LINK>
+   <INFO author="dominikkoller" description="" tags="">
+   </INFO>
+   <NODE systemname="HatchSquare (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchSquare\HatchSquare (EX9.Texture Filter).v4p" nodename="HatchSquare (EX9.Texture Filter)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="1440" top="7770" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1440" top="7770">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HatchFromTexture (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\HatchFromTexture\HatchFromTexture (EX9.Texture Filter).v4p" nodename="HatchFromTexture (EX9.Texture Filter)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="2835" top="7770" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2835" top="7770">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="65" dstpinname="Texture">
+   </LINK>
+   <NODE systemname="Image (DX9)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\misc\Image (DX9).v4p" nodename="Image (DX9)" componentmode="Hidden" id="94">
+   <BOUNDS type="Node" left="630" top="1695" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="95">
+   <BOUNDS type="Node" left="630" top="2070" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="2070" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11460" top="1080" width="3675" height="3150">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Original">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Layer" dstnodeid="95" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="Output" dstnodeid="94" dstpinname="Texture">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96">
+   <BOUNDS type="Node" left="1965" top="6690" width="1905" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="6690" width="1905" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Second Window, Result|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
